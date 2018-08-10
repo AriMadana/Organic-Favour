@@ -49,4 +49,20 @@ public class UsersDAO {
         String condition = "email = '" + to + "'";
         return dbFactory.update(Usr.table, re_otp, data, condition);
     }
+
+    public String signinConfigure(String email, String password) {
+        String condition = "email = '" + email + "' and password = '" + password + "'";
+        return dbFactory.select(Usr.table, "usr_id", condition);
+    }
+    public String checkEmail(String email)
+    {
+        String condition = "email = '"+email+"'";
+        return dbFactory.select(Usr.table,"usr_id",condition);
+    }
+    public String checkPassword(String email,String password)
+    {
+        String condition = "email = '" + email + "' and password = '" + password + "'";
+        return dbFactory.select(Usr.table,"usr_id",condition);
+    }
 }
+

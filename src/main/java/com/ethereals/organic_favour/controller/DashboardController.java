@@ -8,10 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-@RequestMapping("/")
 public class DashboardController {
 
-    @RequestMapping("/")
+    @RequestMapping("/dashboard")
     public ModelAndView dashboard() {
 
         ModelAndView modelAndView = new ModelAndView("dashboard");

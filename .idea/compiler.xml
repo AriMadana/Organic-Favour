@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="orgranic-favour" />
-        <module name="orgranicfavour" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="orgranic-favour" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

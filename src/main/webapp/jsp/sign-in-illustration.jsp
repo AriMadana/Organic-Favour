@@ -48,7 +48,7 @@
           </p>
           
           <!-- Form -->
-          <form>
+          <form action="signin_req" method="POST">
 
             <!-- Email address -->
             <div class="form-group">
@@ -57,7 +57,7 @@
               <label>Email Address</label>
 
               <!-- Input -->
-              <input type="email" class="form-control" placeholder="name@address.com">
+              <input type="email" name="email" class="form-control" placeholder="name@address.com">
 
             </div>
 
@@ -85,7 +85,7 @@
               <div class="input-group input-group-merge">
 
                 <!-- Input -->
-                <input type="password" class="form-control form-control-appended" placeholder="Enter your password">
+                <input type="password" name="password" class="form-control form-control-appended" placeholder="Enter your password">
 
                 <!-- Icon -->
                 <div class="input-group-append">

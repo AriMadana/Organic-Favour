@@ -75,11 +75,11 @@ public class SignUpController {
         emailSV.sendMail(to, subject, OTP);
         Boolean result = usersdao.createUser(users, OTP);
         if(result) {
-            return "redirect:/configure_otp";
+            return "redirect:configure_otp";
         } else if (!result){
-            return "redirect:/home";
+            return "redirect:home";
         } else {
-            return "redirect:/error";
+            return "redirect:error";
         }
 
 

@@ -7,21 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0076813a-d4e2-48e2-a075-cdab388ef0f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/controller/SignUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/controller/SignUpController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/controller/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/controller/SignUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/dao/UsersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/dao/UsersDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/controller/SignUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/controller/SignUpController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/controller/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/controller/SignUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/dao/UsersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/dao/UsersDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/jsp/otp_configure.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/jsp/otp_configure.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,30 +33,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="2" />
-          <entry key="jsp" value="1" />
+          <entry key="jsp" value="4" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="2" />
-          <entry key="JSP" value="1" />
+          <entry key="JSP" value="4" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="343" />
-          <entry key="jsp" value="27" />
-          <entry key="txt" value="18" />
+          <entry key="jsp" value="28" />
+          <entry key="txt" value="28" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="343" />
-          <entry key="JSP" value="27" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="JSP" value="28" />
+          <entry key="PLAIN_TEXT" value="28" />
           <entry key="XML" value="22" />
         </counts>
       </usages-collector>
@@ -94,11 +82,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+            <state relative-caret-position="172">
+              <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="75" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23685">
+              <caret line="1579" column="59" selection-start-line="1579" selection-start-column="59" selection-end-line="1579" selection-end-column="59" />
+              <folding>
+                <element signature="e#2274#2281#1#HTML" expanded="true" />
+                <element signature="e#16973#16980#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-up-illustration.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -114,6 +133,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;assets/</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;${pageContext.request.contextPath}/assets/</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -124,6 +151,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp" />
       </list>
     </option>
   </component>
@@ -229,8 +258,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533907133205" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533907748028" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/jsp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -369,17 +403,25 @@
       <workItem from="1533846507746" duration="1308000" />
       <workItem from="1533848193647" duration="1310000" />
       <workItem from="1533849664117" duration="2431000" />
-      <workItem from="1533880496966" duration="1460000" />
+      <workItem from="1533880496966" duration="2367000" />
     </task>
+    <task id="LOCAL-00001" summary="resend OTP">
+      <created>1533907261196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533907261196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6509000" />
+    <option name="totallyTimeSpent" value="7416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -389,7 +431,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41095892" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41095892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,7 +440,7 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3178082" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -419,6 +461,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="resend OTP" />
+    <option name="LAST_COMMIT_MESSAGE" value="resend OTP" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -444,8 +490,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        <state relative-caret-position="172">
+          <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-up-illustration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23685">
+          <caret line="1579" column="59" selection-start-line="1579" selection-start-column="59" selection-end-line="1579" selection-end-column="59" />
+          <folding>
+            <element signature="e#2274#2281#1#HTML" expanded="true" />
+            <element signature="e#16973#16980#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

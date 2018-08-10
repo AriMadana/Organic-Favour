@@ -12,6 +12,7 @@ public class UsersDAO {
     private final String[] init_reg = new String[] {Usr.email, Usr.password, Usr.active, Usr.otp};
     private final String[] del_otp = new String[] {Usr.otp};
     private final String[] conf_act = new String[] {Usr.active};
+    private final String[] re_otp = new String[] {Usr.otp};
 
     public UsersDAO() {
         dbFactory = new DBFactory();
@@ -41,5 +42,11 @@ public class UsersDAO {
         return dbFactory.update(Usr.table, conf_act, data, condition);
         // TODO Auto-generated method stub
 
+    }
+
+    public Boolean resendOTP(String to, String otp) {
+        Object[] data = new Object[] {otp};
+        String condition = "email = '" + to + "'";
+        return dbFactory.update(Usr.table, re_otp, data, condition);
     }
 }

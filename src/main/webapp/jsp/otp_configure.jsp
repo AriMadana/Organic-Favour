@@ -68,7 +68,7 @@
             <!-- Link -->
             <div class="text-center">
               <small class="text-muted text-center">
-                Not yet to your inbox? <a href="/signup_reg_re">Resend Code</a>.
+                Not yet to your inbox? <a href="/resend_otp">Resend Code</a>.
               </small>
             </div>
             

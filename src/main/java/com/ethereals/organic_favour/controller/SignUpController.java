@@ -98,6 +98,37 @@ public class SignUpController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/resend_otp")
+    public String resendOtp(HttpSession session) {
+        String to = (String)session.getAttribute("email");
+        String subject = "Your OTP";
+        int max = 999999;
+        int min = 1;
+        int range = max-min;
+        Random random1 = new Random();
+        int randomnumber = random1.nextInt((max-min)+1)+min;
+        final String OTP = randomnumber+"";
+        new java.util.Timer().schedule(
+                new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        usersdao.deleteOTP(to, OTP);
+                        // your code here
+                    }
+                },
+                60000
+        );
+        emailSV.sendMail(to, subject, OTP);
+        Boolean result = usersdao.resendOTP(to, OTP);
+        if(result) {
+            return "redirect:/configure_otp";
+        } else if (!result){
+            return "redirect:/home";
+        } else {
+            return "redirect:/error";
+        }
+    }
+
 //    @RequestMapping("/error")
 //    public ModelAndView error() {
 //        ModelAndView modelAndView = new ModelAndView("error-illustration");

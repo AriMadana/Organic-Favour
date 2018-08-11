@@ -1,9 +1,12 @@
 package com.ethereals.organic_favour.controller;
 
+import java.util.Map;
 import java.util.Random;
 
 import javax.servlet.http.HttpSession;
 
+import com.ethereals.organic_favour.model.UserData;
+import com.ethereals.organic_favour.session.SessionControl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,8 +20,10 @@ import com.ethereals.organic_favour.model.UsersModel;
 
 @Controller
 public class SignUpController {
+    private UsersDAO usersDAO = new UsersDAO();
     private EmailService emailSV = new EmailService();
     private UsersDAO usersdao = new UsersDAO();
+    private SessionControl sessionControl = new SessionControl();
 //	@RequestMapping("/")
 //	public ModelAndView displayEmployees() {
 //		List<Employee> employees = empDAO.readEmployees();
@@ -29,12 +34,6 @@ public class SignUpController {
 //		return modelAndView;
 //	}
 
-    @RequestMapping(value = "/signup")
-    public ModelAndView signup() {
-        ModelAndView modelAndView = new ModelAndView("sign-up-illustration");
-        return modelAndView;
-    }
-
     @RequestMapping(value = "/verify_otp", method = RequestMethod.POST)
     public String verifyOTP(@RequestParam("one_time_pass")String oneTimePass, HttpSession session) {
         String email = (String)session.getAttribute("email");
@@ -43,59 +42,54 @@ public class SignUpController {
             return "redirect:configure_otp";
         } else {
 
-            if(usersdao.confgOTP_Act(state)) {
-                return "redirect:dashboard";
+            if(usersdao.confgOTP_Act(state, session)) {
+                return "redirect:signin";
             } else {
                 return "redirect:error";
             }
         }
 
     }
+
     @RequestMapping(value = "/signup_req", method=RequestMethod.POST)
-    public String signup_req(Model m1, UsersModel users, HttpSession session) {
+    public String signupReq(Model m1, UsersModel users, HttpSession session) {
         final String to = users.getEmail();
         session.setAttribute("email", to);
-        String subject = "Your OTP";
-        int max = 999999;
-        int min = 1;
-        int range = max-min;
-        Random random1 = new Random();
-        int randomnumber = random1.nextInt((max-min)+1)+min;
-        final String OTP = randomnumber+"";
-        new java.util.Timer().schedule(
-                new java.util.TimerTask() {
-                    @Override
-                    public void run() {
-                        usersdao.deleteOTP(to, OTP);
-                        // your code here
-                    }
-                },
-                60000
-        );
-        emailSV.sendMail(to, subject, OTP);
-        Boolean result = usersdao.createUser(users, OTP);
-        if(result) {
+        String user_id = usersdao.setIdFEmail(to);
+        if (sessionControl.checkUserAct(users) != null) { //User Active
+            return "redirect:login";
+        } else if (sessionControl.checkUserExi(users) != null ){
             return "redirect:configure_otp";
-        } else if (!result){
-            return "redirect:home";
+        } else if (sessionControl.checkUserAct(users) == null && sessionControl.checkUserExi(users) == null && usersDAO.checkEmail(users.getEmail())== null ){
+            String subject = "Your OTP";
+            int max = 999999;
+            int min = 1;
+            int range = max-min;
+            Random random1 = new Random();
+            int randomnumber = random1.nextInt((max-min)+1)+min;
+            final String OTP = randomnumber+"";
+            new java.util.Timer().schedule(
+                    new java.util.TimerTask() {
+                        @Override
+                        public void run() {
+                            usersdao.deleteOTP(to, OTP);
+                            // your code here
+                        }
+                    },
+                    60000
+            );
+            emailSV.sendMail(to, subject, OTP);
+            Boolean result = usersdao.createUser(users, OTP);
+            if(result) {
+                return "redirect:configure_otp";
+            } else if (!result){
+                return "redirect:home";
+            } else {
+                return "redirect:error";
+            }
         } else {
             return "redirect:error";
         }
-
-
-
-//		System.out.println(result + " Dar");
-//		if (result == true) {
-//			return "redirect:/configure_otp/";
-//		} else {
-//			return "redirect:/home";
-//		}
-    }
-
-    @RequestMapping("/configure_otp")
-    public ModelAndView confOtp() {
-        ModelAndView modelAndView = new ModelAndView("otp_configure");
-        return modelAndView;
     }
 
     @RequestMapping(value = "/resend_otp")
@@ -121,11 +115,11 @@ public class SignUpController {
         emailSV.sendMail(to, subject, OTP);
         Boolean result = usersdao.resendOTP(to, OTP);
         if(result) {
-            return "redirect:/configure_otp";
+            return "redirect:configure_otp";
         } else if (!result){
-            return "redirect:/home";
+            return "redirect:home";
         } else {
-            return "redirect:/error";
+            return "redirect:error";
         }
     }
 

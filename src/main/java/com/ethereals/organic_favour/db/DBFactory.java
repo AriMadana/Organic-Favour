@@ -141,7 +141,6 @@ public class DBFactory {
         close();
         return response;
     }
-
     public List<String[]> selectObjectList(String table, String[] columns, String condition) {
         String query = "SELECT "+columns[0];
         for(int i=1; i<columns.length; i++) {

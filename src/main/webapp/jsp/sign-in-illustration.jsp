@@ -2,6 +2,15 @@
          pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<% String msg = (String)session.getAttribute("msg");
+    String id = (String)session.getAttribute("id");
+    if (msg == "not_act") {
+        response.sendRedirect("configure_otp");
+    }
+    if(id != null) {
+        response.sendRedirect("dashboard");
+    }
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/T/html4/loose.dtd">
 <html lang="en">
   <head>
@@ -36,17 +45,31 @@
 
         </div>
         <div class="col-12 col-md-5 col-xl-4 order-md-1 my-5">
-          
+            <% if(msg == "user_not_found") { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>User Not Found!</strong> Please check your Email Address`   ...
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <% } else if(msg == "psw_error"){ %>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Password Error!</strong> Username and Password are not match...
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <%}%>
           <!-- Heading -->
           <h1 class="display-4 text-center mb-3">
             Sign in
           </h1>
-          
+
           <!-- Subheading -->
           <p class="text-muted text-center mb-5">
             Free access to our dashboard.
           </p>
-          
+
           <!-- Form -->
           <form action="signin_req" method="POST">
 
@@ -66,15 +89,15 @@
 
               <div class="row">
                 <div class="col">
-                      
+
                   <!-- Label -->
                   <label>Password</label>
 
                 </div>
                 <div class="col-auto">
-                  
+
                   <!-- Help text -->
-                  <a href="password-reset-illustration.html" class="form-text small text-muted">
+                  <a href="reset_psw" class="form-text small text-muted">
                     Forgot password?
                   </a>
 
@@ -108,7 +131,7 @@
                 Don't have an account yet? <a href="sign-up-illustration.html">Sign up</a>.
               </small>
             </div>
-            
+
           </form>
 
         </div>

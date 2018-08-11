@@ -56,7 +56,7 @@
               <!-- Label -->
 
               <!-- Input -->
-              <input name="one_time_pass" type="text" class="form-control" placeholder="000000">
+              <input name="one_time_pass" type="text" class="form-control" placeholder="${userotp}" value="${userotp}">
 
             </div>
 

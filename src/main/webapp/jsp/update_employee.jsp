@@ -15,6 +15,12 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/controller.js"></script>
 
+<%--	<%
+		String id = (String) session.getAttribute("id");
+		UsersDAO usersDAO = new UsersDAO();
+		String[] user_data = usersDAO.selectProfile(id);
+		System.out.println(user_data[1] + " " + user_data[2]);
+	%>--%>
 </head>
 <body>
 

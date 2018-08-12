@@ -190,7 +190,7 @@
                 </div> <!-- / .row -->
 
               </a>
-              <a href="profile-posts.html" class="list-group-item px-0">
+              <a href="profile" class="list-group-item px-0">
 
                 <div class="row align-items-center">
                   <div class="col-auto">
@@ -217,7 +217,7 @@
                 </div> <!-- / .row -->
 
               </a>
-              <a href="profile-posts.html" class="list-group-item px-0">
+              <a href="profile" class="list-group-item px-0">
 
                 <div class="row align-items-center">
                   <div class="col-auto">
@@ -540,7 +540,7 @@
 
         <!-- Menu -->
         <div class="dropdown-menu dropdown-menu-right">
-          <a href="profile-posts.html" class="dropdown-item">Profile</a>
+          <a href="profile" class="dropdown-item">Profile</a>
           <a href="settings.html" class="dropdown-item">Settings</a>
           <hr class="dropdown-divider">
           <a href="logout" class="dropdown-item">Logout</a>

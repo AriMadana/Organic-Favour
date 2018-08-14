@@ -29,11 +29,147 @@
         .nav-item .nav-link:hover {
             cursor: pointer;
         }
+        .second-farm-form.right {
+            -webkit-transform: translateX(200%);
+            -moz-transform: translateX(200%);
+            -ms-transform: translateX(200%);
+            -o-transform: translateX(200%);
+            transform: translateX(200%);
+            -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
+            transition: transform 0.5s ease-in;
+        }
+        .first-farm-form.left {
+            -webkit-transform: translateX(-200%);
+            -moz-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            -o-transform: translateX(-200%);
+            transform: translateX(-200%);
+            -webkit-transition: -webkit-transform 0.5s ease-out; /* Safari */
+            transition: transform 0.5s ease-out;
+        }
+        .second-farm-form {
+            -webkit-transition: -webkit-transform 0.5s ease-out; /* Safari */
+            transition: transform 0.5s ease-out;
+        }
+        .first-farm-form {
+            -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
+            transition: transform 0.5s ease-in;
+        }
     </style>
 
 </head>
 <body>
+<!-- New Post Model -->
+<div class="modal fade" id="newPost" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="background: transparent;">
+            <div class="modal-card card first-farm-form" style="width:100%;position:absolute;left:0;">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
 
+                            <!-- Close -->
+                            <button type="button" class="close btn-sm" data-dismiss="modal" aria-label="Close">
+                                <span class="fe fe-power" style="font-size: 20px;"></span>
+                            </button>
+
+                        </div>
+                        <div class="col" style="text-align:center;">
+
+                            <!-- Title -->
+                            <h4 class="card-header-title" id="exampleModalCenterTitle">
+                                Add a Farm
+                            </h4>
+
+                        </div>
+                        <div class="col-auto">
+
+                            <!-- Close -->
+                            <button type="button" class="close next-farm-form">
+                                <span class="fe fe-arrow-right"></span>
+                            </button>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+                <div class="card-header">
+                    <input type="text" class="form-control form-control-rounded" placeholder="Form control rounded">
+                </div>
+                <div class="card-body">
+                    <!-- Single -->
+                    <div class="dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://">
+
+                        <div class="fallback">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="projectCoverUploads">
+                                <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                            </div>
+                        </div>
+
+                        <div class="dz-preview dz-preview-single">
+                            <div class="dz-preview-cover">
+                                <img class="dz-preview-img" src="..." alt="..." data-dz-thumbnail>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-card card second-farm-form right farm-form-right" style="right:0;">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+
+                            <!-- Close -->
+                            <button type="button" class="close btn-sm previous-farm-form">
+                                <span class="fe fe-arrow-left"></span>
+                            </button>
+
+                        </div>
+                        <div class="col" style="text-align:center;">
+
+                            <!-- Title -->
+                            <h4 class="card-header-title" id="exampleModalCenterTitle">
+                                Add a Farm
+                            </h4>
+
+                        </div>
+                        <div class="col-auto">
+
+                            <!-- Close -->
+                            <button type="button" class="close">
+                                <span class="fe fe-check"></span>
+                            </button>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+                <div class="card-header">
+                    <input type="text" class="form-control form-control-rounded" placeholder="Form control rounded">
+                </div>
+                <div class="card-body">
+                    <!-- Single -->
+                    <div class="dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://">
+
+                        <div class="fallback">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="projectCoverUploads">
+                                <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                            </div>
+                        </div>
+
+                        <div class="dz-preview dz-preview-single">
+                            <div class="dz-preview-cover">
+                                <img class="dz-preview-img" src="..." alt="..." data-dz-thumbnail>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- TOPNAV
 ================================================== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -830,55 +966,55 @@
 
             <!-- Body -->
             <div class="header-body mt--5 mt-md--6">
-                <div class="row align-items-end" style="margin-top:-13px;">
-                    <div class="col-auto">
+                <%--<form action="profile_imgs" method="POST" enctype="multipart/form-data">--%>
+                    <div class="row align-items-end" style="margin-top:-13px;">
+                        <div class="col-auto">
 
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xxl header-avatar-top">
-                            <div class="cust_dz dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://" style="z-index:0; height:inherit; border-radius:50%;">
-
-                                <!-- Fallback -->
-                                <div class="fallback">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="projectCoverUploads">
-                                        <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xxl header-avatar-top">
+                                <div id="custDropzone" class="cust_dz dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://localhost:8090/organic-favour/profile_imgs" style="z-index:0; height:inherit; border-radius:50%;">
+                                    <!-- Fallback -->
+                                    <div class="fallback">
+                                        <div class="custom-file">
+                                            <!-- Profile Input -->
+                                            <input name="us_pf_img" type="file" class="custom-file-input" id="projectCoverUploads">
+                                            <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                                        </div>
+                                    </div>
+                                    <!-- Preview -->
+                                    <div id="dropzonePreview" class="dz-preview dz-preview-single" style="border-radius:50%;">
+                                        <div class="dz-preview-cover">
+                                            <img id="pfPreviewImg" class="dz-preview-img rounded-circle" src="html" alt="..." data-dz-thumbnail style="border-radius:0px;">
+                                        </div>
                                     </div>
                                 </div>
-
-                                <!-- Preview -->
-                                <div class="dz-preview dz-preview-single" style="border-radius:50%;">
-                                    <div class="dz-preview-cover">
-                                        <img class="dz-preview-img rounded-circle" src="html" alt="..." data-dz-thumbnail style="border-radius:0px;">
-                                    </div>
-                                </div>
-
+                                <!-- <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle border border-body"> -->
                             </div>
-                            <!-- <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle border border-body"> -->
+
                         </div>
+                        <div class="col mb-3 ml--3 ml-md--2">
 
-                    </div>
-                    <div class="col mb-3 ml--3 ml-md--2">
+                            <!-- Pretitle -->
+                            <h6 class="header-pretitle">
+                                Members
+                            </h6>
 
-                        <!-- Pretitle -->
-                        <h6 class="header-pretitle">
-                            Members
-                        </h6>
+                            <!-- Title -->
+                            <h1 class="header-title">
+                                Dianna Smiley
+                            </h1>
 
-                        <!-- Title -->
-                        <h1 class="header-title">
-                            Dianna Smiley
-                        </h1>
+                        </div>
+                        <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
 
-                    </div>
-                    <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+                            <!-- Button -->
+                            <button id="save_image" type="button" class="btn btn-primary">
+                                Save Image
+                            </button>
 
-                        <!-- Button -->
-                        <button type="button" class="btn btn-primary" disabled>
-                            Save Image
-                        </button>
-
-                    </div>
-                </div> <!-- / .row -->
+                        </div>
+                    </div> <!-- / .row -->
+                <%--</form>--%>
                 <div class="row align-items-center">
                     <div class="col">
 
@@ -1181,7 +1317,7 @@
                             </div> <!-- / .nav -->
 
                         </div>
-                        <button type="button" class="btn btn-success btn-primary btn-lg" style="margin-right: 13px">
+                        <button type="button" class="btn btn-success btn-primary btn-lg" style="margin-right: 13px" data-target="#newPost" data-toggle="modal">
                             New
                         </button>
                     </div> <!-- / .row -->
@@ -2400,6 +2536,22 @@
 <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
 <script>
     $(document).ready(function() {
+        // $('div#custDropzone').dropzone({url: "/profile_imgs"});
+        $('#save_image').on("click", function() {
+            alert("clicked");
+            var prof_data_val = $('#pfPreviewImg').attr("src");
+            var prof_data_name = $('#pfPreviewImg').attr("alt");
+            $.ajax({
+                type: "post",
+                url: "test_ajax", //here you can use servlet,jsp, etc
+                data: {prof_name: prof_data_name, prof_val: prof_data_val},
+                success: function(msg){
+                    alert(msg);
+                }
+            });
+        });
+
+
         $(".cust_dz .dz-message").html('<div style="font-size:35px;text-align:center;position:absolute;display:table;margin-top:50%;margin-left:50%;transform: translate(-10px,-28px);">+</div>');
 
         $(".nav-link-data").slideUp(0);
@@ -2428,6 +2580,14 @@
             $(this).addClass("active");
             setTimeout(function(){$(".profile-info-row .setting").slideDown(500)}, 500);
         });
+        $(".next-farm-form").on("click", function() {
+            $(".first-farm-form").addClass("left");
+            $(".second-farm-form").removeClass("right");
+        });
+        $(".previous-farm-form").on("click", function() {
+            $(".first-farm-form").removeClass("left");
+            $(".second-farm-form").addClass("right");
+        })
     });
 
 </script>

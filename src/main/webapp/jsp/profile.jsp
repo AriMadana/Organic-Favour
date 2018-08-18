@@ -59,6 +59,14 @@
 
 </head>
 <body>
+<div class="top-alert" style="position:fixed; width:100%; z-index:99999; padding:5% 5% 0% 5%;">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Danger Will Robinson!</strong> This is a dismissable alert!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+</div>
 <!-- New Post Model -->
 <div class="modal fade" id="newPost" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -93,7 +101,7 @@
                     </div> <!-- / .row -->
                 </div>
                 <div class="card-header">
-                    <input type="text" class="form-control form-control-rounded" placeholder="Form control rounded">
+                    <input type="text" class="form-control form-control-rounded" placeholder="Farm Name...">
                 </div>
                 <div class="card-body">
                     <!-- Single -->
@@ -145,26 +153,26 @@
                     </div> <!-- / .row -->
                 </div>
                 <div class="card-header">
-                    <input type="text" class="form-control form-control-rounded" placeholder="Form control rounded">
+                    <div class="mb-0" data-select2-id="10">
+                        Select <span class="badge badge-soft-primary" style="font-size:15px;margin-bottom:5px;">Categories</span><br>
+                        <select class="form-control select2-hidden-accessible" data-toggle="select" multiple="" data-select2-id="7" tabindex="-1" aria-hidden="true">
+                            <option data-select2-id="19">CSS</option>
+                            <option data-select2-id="20">HTML</option>
+                            <option data-select2-id="21">JavaScript</option>
+                            <option data-select2-id="22">Bootstrap</option>
+                            <option data-select2-id="1">Shwe</option>
+                            <option data-select2-id="2">Zaw</option>
+                            <option data-select2-id="3">Htet</option>
+                            <option data-select2-id="4">Pyae</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="card-body">
                     <!-- Single -->
-                    <div class="dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://">
-
-                        <div class="fallback">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="projectCoverUploads">
-                                <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
-                            </div>
-                        </div>
-
-                        <div class="dz-preview dz-preview-single">
-                            <div class="dz-preview-cover">
-                                <img class="dz-preview-img" src="..." alt="..." data-dz-thumbnail>
-                            </div>
-                        </div>
-
-                    </div>
+                    <form>
+                        <label class="sr-only">Description...</label>
+                        <textarea class="form-control" placeholder="Description..." rows="2"></textarea>
+                    </form>
                 </div>
             </div>
         </div>
@@ -941,22 +949,21 @@
 <div class="main-content">
     <!-- HEADER -->
     <div class="header">
-
         <!-- Image -->
-        <div class="dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://" style="z-index:0;">
+        <div id="cvDropZone" class="dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://" style="z-index:0;">
 
             <!-- Fallback -->
             <div class="fallback">
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="projectCoverUploads">
+                    <input type="file" name="cvDropZoneInput" class="custom-file-input" id="cvDropZoneInput">
                     <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
                 </div>
             </div>
 
             <!-- Preview -->
-            <div class="dz-preview dz-preview-single">
+            <div id="cvPreviewDiv" class="dz-preview dz-preview-single">
                 <div class="dz-preview-cover">
-                    <img class="dz-preview-img" src="html" alt="..." data-dz-thumbnail style="border-radius:0px;">
+                    <img id="cvPreviewImgLocal" class="dz-preview-img" src="html" alt="..." data-dz-thumbnail style="border-radius:0px;">
                 </div>
             </div>
 
@@ -972,7 +979,7 @@
 
                             <!-- Avatar -->
                             <div class="avatar avatar-xxl header-avatar-top">
-                                <div id="custDropzone" class="cust_dz dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://localhost:8090/organic-favour/profile_imgs" style="z-index:0; height:inherit; border-radius:50%;">
+                                <div class="cust_dz dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://localhost:8090/organic-favour/profile_imgs" style="z-index:0; height:inherit; border-radius:50%;">
                                     <!-- Fallback -->
                                     <div class="fallback">
                                         <div class="custom-file">
@@ -982,9 +989,9 @@
                                         </div>
                                     </div>
                                     <!-- Preview -->
-                                    <div id="dropzonePreview" class="dz-preview dz-preview-single" style="border-radius:50%;">
+                                    <div id="pfPreviewDiv" class="dz-preview dz-preview-single" style="border-radius:50%;">
                                         <div class="dz-preview-cover">
-                                            <img id="pfPreviewImg" class="dz-preview-img rounded-circle" src="html" alt="..." data-dz-thumbnail style="border-radius:0px;">
+`                                            <img id="pfPreviewImgLocal" class="dz-preview-img rounded-circle" src="html" alt="..." data-dz-thumbnail style="border-radius:0px;margin-top:-22px;">
                                         </div>
                                     </div>
                                 </div>
@@ -2529,27 +2536,288 @@
 <script src="${pageContext.request.contextPath}/assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/list.js/dist/list.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/quill/dist/quill.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/select2/dist/js/select2.min.js"></script>
-
+<script src="${pageContext.request.contextPath}/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
 <!-- Theme JS -->
 <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
 <script>
     $(document).ready(function() {
-        // $('div#custDropzone').dropzone({url: "/profile_imgs"});
-        $('#save_image').on("click", function() {
-            alert("clicked");
-            var prof_data_val = $('#pfPreviewImg').attr("src");
-            var prof_data_name = $('#pfPreviewImg').attr("alt");
+        $.ajax({
+
+            url: "prof_get", //here you can use servlet,jsp, etc
+            success: function(msg){
+                //formatCheck(msg);
+                prof_div =  "<div class='dz-preview-cover dz-processing dz-error dz-complete dz-image-preview'>" +
+                    "<img id='pfPreviewImg' class='dz-preview-img rounded-circle' src='data:image/png;base64," + msg + "' alt='Adele-Hello.jpg' data-dz-thumbnail='' style='border-radius:0px;'>" +
+                    "</div>";
+                $('#pfPreviewDiv').html(prof_div);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.responseText);
+                alert(thrownError);
+            }
+        }).done(function() {
+        });
+
+        //for coverphoto
+        $.ajax({
+            url: "cv_get", //here you can use servlet,jsp, etc
+            success: function(msg){
+                cv_div =  "<div class='dz-preview-cover dz-processing dz-error dz-complete dz-image-preview'>" +
+                    "<img id='cvPreviewImg' class='dz-preview-img' src='data:image/png;base64," + msg + "' alt='Adele-Hello.jpg' data-dz-thumbnail='' style='border-radius:0px;'>" +
+                    "</div>";
+                $('#cvPreviewDiv').html(cv_div);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.responseText);
+                alert(thrownError);
+            }
+        }).done(function() {
+        });
+
+        function saveProfCov(pfValue, cvValue) {
+            alert("pf cv ajax");
+            //alert(pfValue);
+           // alert(cvValue);
             $.ajax({
                 type: "post",
-                url: "test_ajax", //here you can use servlet,jsp, etc
-                data: {prof_name: prof_data_name, prof_val: prof_data_val},
+                url: "prof_cov_upload", //here you can use servlet,jsp, etc
+                data: {prof_val: pfValue, cov_val: cvValue},
+                success: function(msg){
+                   alert(msg);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.responseText);
+                    alert(thrownError);
+                }
+            }).done(function() {
+                $('#save_image').prop('disabled', false);
+                $('#save_image').removeClass("is-loading");
+            });
+        }
+
+        function saveProfile(pfValue) {
+            alert("pf ajax");
+            $.ajax({
+                type: "post",
+                url: "profile_upload", //here you can use servlet,jsp, etc
+                data: {prof_val: pfValue},
                 success: function(msg){
                     alert(msg);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.responseText);
+                    alert(thrownError);
                 }
+            }).done(function() {
+                $('#save_image').prop('disabled', false);
+                $('#save_image').removeClass("is-loading");
             });
+        }
+
+        function saveCover(cvValue) {
+            alert(cvValue);
+            $.ajax({
+                type: "post",
+                url: "cover_upload", //here you can use servlet,jsp, etc
+                dataType: "json",
+                contentType: "application/json;",
+                data: {cov_val: cvValue},
+                success: function(msg){
+                    alert(msg);
+                   // var type = cvValue.substring("/", ";");
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.responseText);
+                    alert(thrownError);
+                }
+            }).done(function() {
+                $('#save_image').prop('disabled', false);
+                $('#save_image').removeClass("is-loading");
+            });
+        }
+        // $('div#custDropzone').dropzone({url: "/profile_imgs"});
+        function getBase64Image(img) {
+            var canvas = document.createElement("canvas");
+            canvas.width = img.width;
+            canvas.height = img.height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+            var dataURL = canvas.toDataURL("image/png");
+            return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+        }
+
+        function b64toBlob(b64Data, contentType, sliceSize) {
+            contentType = contentType || '';
+            sliceSize = sliceSize || 512;
+
+            var byteCharacters = atob(b64Data);
+            var byteArrays = [];
+
+            for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+                var slice = byteCharacters.slice(offset, offset + sliceSize);
+
+                var byteNumbers = new Array(slice.length);
+                for (var i = 0; i < slice.length; i++) {
+                    byteNumbers[i] = slice.charCodeAt(i);
+                }
+
+                var byteArray = new Uint8Array(byteNumbers);
+
+                byteArrays.push(byteArray);
+            }
+
+            var blob = new Blob(byteArrays, {type: contentType});
+            return blob;
+        }
+
+        $('#save_image').on('click', function() {
+            $(this).addClass("is-loading");
+            $(this).prop("disabled", true);
+            var data = {};
+            data["imageCvUrl"] = $('#cvPreviewImgLocal').attr("src");
+            data["imagePfUrl"] = $('#pfPreviewImgLocal').attr("src");
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: "upload_profile_img",
+                data: JSON.stringify(data),
+                dataType: 'json',
+                timeout: 600000,
+                success: function (msg) {
+                    alert(msg);
+                    //$("#btn-update").prop("disabled", false);
+                    //...
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    //alert(xhr.responseText);
+                    //alert(thrownError);
+                },
+                complete: function() {
+                    $("#save_image").removeClass("is-loading");
+                    $("#save_image").prop("disabled", false);
+                }
+            }).done(function() {
+                $("#save_image").removeClass("is-loading");
+                $("#save_image").prop("disabled", false);
+            });
+            //var base64R = base64.replace("data:image/png;base64,", "");
+            // alert(cov_data_val);
+            //var base64 = getBase64Image(document.getElementById("cvPreviewImgLocal"));
+            //cvBlob = b64toBlob(base64R, '', 512);
+            //var formData = new FormData();
+            //formData.append('picture', cvBlob);
+
+            // $.ajax({
+            //     url: "cove_upload",
+            //     type: "POST",
+            //     data: {picture: base64},
+            //     success: function(msg){
+            //         alert("Message " + msg);
+            //         // var reader = new FileReader();
+            //         // reader.readAsDataURL(blob);
+            //         // reader.onloadend = function() {
+            //         //     base64data = reader.result;
+            //         //     $('#pfPreviewImg').attr("src" + "data:image/jpg;base64," + base64data);
+            //         // }
+            //         $('#pfPreviewImg').attr("src" , msg);
+            //     },
+            //     error: function (xhr, ajaxOptions, thrownError) {
+            //         alert(xhr.responseText);
+            //         alert(thrownError);
+            //     }
+            //     }).done(function() {
+            //         alert('done');
+            //
+            //     });
+
+
+            //cvBlob = b64toBlob(base64, '', 512);
+            //var reader = new FileReader();
+            //reader.readAsDataURL(cvBlob);
+            //reader.onloadend = function() {
+            //base64data = reader.result;
+            //var base64dataR = base64data.replace("data:base64,png", "");
+            //alert("BS64 " + base64dataR);
+            //$('#pfPreviewImg').attr("src" , base64);
         });
+            // var url = "cover_upload";
+            // var formData = new FormData();
+            // formData.append('picture', cvBlob);
+            //
+            // $.ajax({
+            //     url: url,
+            //     type: "POST",
+            //     cache: false,
+            //     contentType: false,
+            //     processData: false,
+            //     data: formData,
+            //     success: function(msg){
+            //         alert("Message " + msg);
+            //         var reader = new FileReader();
+            //         reader.readAsDataURL(blob);
+            //         reader.onloadend = function() {
+            //             base64data = reader.result;
+            //             $('#pfPreviewImg').attr("src" + "data:image/jpg;base64," + base64data);
+            //         }
+            //     },
+            //     error: function (xhr, ajaxOptions, thrownError) {
+            //         alert(xhr.responseText);
+            //         alert(thrownError);
+            //     }
+            //     }).done(function() {
+            //         alert('done');
+            //
+            //     });
+            // alert(cvBlob);
+            // $.ajax({
+            //     type: "post",
+            //     url: "prof_cov_upload", //here you can use servlet,jsp, etc
+            //     data: {prof_val: pfValue, cov_val: cvValue},
+            //     success: function(msg){
+            //         alert(msg);
+            //     },
+            //     error: function (xhr, ajaxOptions, thrownError) {
+            //         alert(xhr.responseText);
+            //         alert(thrownError);
+            //     }
+            // }).done(function() {
+            //     $('#save_image').prop('disabled', false);
+            //     $('#save_image').removeClass("is-loading");
+            // });
+
+
+        // $('#save_image').on("click", function() {
+        //
+        //     var prof_data_val = $('#pfPreviewImgLocal').attr("src");
+        //
+        //     var prof_check = $('#pfPreviewImgLocal').attr("alt");
+        //     var cov_check = $('#cvPreviewImgLocal').attr("alt");
+        //
+        //     //Console.log(prof_data_val+"TAG");
+        //     if(prof_check == null) { prof_check = "mpar"; }
+        //     if(cov_check == null) { cov_check = "mpar"; }
+        //
+        //     if (cov_check == "mpar" && prof_check == "mpar") {
+        //         alert('Please');
+        //     } else if (cov_check == "mpar" && prof_check != "mpar"){
+        //         $(this).addClass("is-loading");
+        //         $(this).prop("disabled", true);
+        //         saveProfile(prof_data_val);
+        //     } else if (cov_check != "mpar" && prof_check == "mpar") {
+        //         $(this).addClass("is-loading");
+        //         $(this).prop("disabled", true);
+        //         var cov_data_val = getBase64Image(document.getElementById("cvPreviewImgLocal"));
+        //         blobCV = b64toBlob(cov_data_val, '', 512);
+        //         saveCover(blobCV);
+        //     } else if (cov_check != "mpar" && prof_check != "mpar") {
+        //         $(this).addClass("is-loading");
+        //         $(this).prop("disabled", true);
+        //         saveProfCov(prof_data_val, cov_data_val)
+        //     }
+        //
+        // });
 
 
         $(".cust_dz .dz-message").html('<div style="font-size:35px;text-align:center;position:absolute;display:table;margin-top:50%;margin-left:50%;transform: translate(-10px,-28px);">+</div>');
@@ -2587,8 +2855,10 @@
         $(".previous-farm-form").on("click", function() {
             $(".first-farm-form").removeClass("left");
             $(".second-farm-form").addClass("right");
-        })
+        });
     });
+
+
 
 </script>
 </body>

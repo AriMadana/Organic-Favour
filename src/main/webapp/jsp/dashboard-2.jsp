@@ -212,6 +212,8 @@
                         <option>HTML</option>
                         <option>CSS3</option>
                     </select>
+
+                    <textarea class="form-control" style="margin-top: 8px;" placeholder="Some description..." rows="2"></textarea>
                     <hr>
                     <div style="width:100%;text-align:center;margin-top:5px;">
                         <div class="btn-group btn-group-lg mr-2 mb-3" role="group" aria-label="First group">
@@ -1071,9 +1073,9 @@
                                     <div class="col">
 
                                         <!-- Title -->
-                                        <h4 class="card-header-title">
-                                            Devices
-                                        </h4>
+                                        <button type="button" class="btn btn-primary" data-target="#newSellPost" data-toggle="modal">
+                                            <span class="fe fe-package mr-2"></span>New Post
+                                        </button>
 
                                     </div>
                                     <div class="col-auto">
@@ -1099,8 +1101,26 @@
                             <div class="card-body">
 
                                 <!-- Chart -->
-                                <div class="chart chart-appended"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-                                    <canvas id="devicesChart" class="chart-canvas chartjs-render-monitor" data-target="#devicesChartLegend" width="612" height="482" style="display: block; height: 241px; width: 306px;"></canvas>
+                                <div class="form-row">
+                                    <select class="form-control" data-toggle="select">
+                                        <option>What</option>
+                                        <option>The</option>
+                                        <option>Fuck</option>
+                                    </select>
+                                </div>
+                                <div class="form-row" style="margin-top:10px;">
+                                    <select class="form-control" data-toggle="select">
+                                        <option>What</option>
+                                        <option>The</option>
+                                        <option>Fuck</option>
+                                    </select>
+                                </div>
+                                <div class="form-row" style="margin-top:10px;">
+                                    <select class="form-control" data-toggle="select">
+                                        <option>What</option>
+                                        <option>The</option>
+                                        <option>Fuck</option>
+                                    </select>
                                 </div>
 
                                 <!-- Legend -->
@@ -1133,9 +1153,7 @@
                                     </div>
                                     <div class="col-auto">
 
-                                        <button type="button" class="btn btn-primary" data-target="#newSellPost" data-toggle="modal">
-                                            <span class="fe fe-package mr-2"></span>New Post
-                                        </button>
+
                                         <!-- Toggle -->
 
 
@@ -1857,20 +1875,20 @@
     $('#pc-opt-btn1').on('click', function() {
         $('.pc-opt-btn').removeClass('active');
         $(this).addClass('active');
-        $('.price-option-div').slideUp(500);
-        setTimeout(function(){$('.price-option-one').slideDown(500)}, 500);
+        $('.price-option-div').slideUp(200);
+        setTimeout(function(){$('.price-option-one').slideDown(200)}, 200);
     });
     $('#pc-opt-btn2').on('click', function() {
         $('.pc-opt-btn').removeClass('active');
         $(this).addClass('active');
-        $('.price-option-div').slideUp(500);
-        setTimeout(function(){$('.price-option-two').slideDown(500)}, 500);
+        $('.price-option-div').slideUp(200);
+        setTimeout(function(){$('.price-option-two').slideDown(200)}, 200);
     });
     $('#pc-opt-btn3').on('click', function() {
         $('.pc-opt-btn').removeClass('active');
         $(this).addClass('active');
-        $('.price-option-div').slideUp(500);
-        setTimeout(function(){$('.price-option-three').slideDown(500)}, 500);
+        $('.price-option-div').slideUp(200);
+        setTimeout(function(){$('.price-option-three').slideDown(200)}, 200);
     });
 </script>
 </body>

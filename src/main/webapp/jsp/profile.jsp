@@ -18,6 +18,19 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
     <title>Dashkit</title>
     <style>
+        /*.coordinates {*/
+            /*background: rgba(0,0,0,0.5);*/
+            /*color: #fff;*/
+            /*position: absolute;*/
+            /*bottom: 10px;*/
+            /*left: 10px;*/
+            /*padding:5px 10px;*/
+            /*margin: 0;*/
+            /*font-size: 11px;*/
+            /*line-height: 18px;*/
+            /*border-radius: 3px;*/
+            /*display: none;*/
+        /*}*/
         .farm-card-view:hover {
             cursor: pointer;
         }
@@ -86,18 +99,10 @@
 
 </head>
 <body>
-<div class="top-alert" style="position:fixed; width:100%; z-index:99999; padding:5% 5% 0% 5%;">
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Danger Will Robinson!</strong> This is a dismissable alert!
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
-        </button>
-    </div>
-</div>
 <!-- New Post Model -->
 <div class="modal fade" id="newPost" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content first-farm-form" style="background: transparent;position:absolute;left:0;">
+        <div id="farm-edit" class="modal-content first-farm-form" style="background: transparent;position:absolute;left:0;">
             <div class="modal-card card">
                 <div class="card-header">
                     <div class="row align-items-center">
@@ -112,7 +117,7 @@
                         <div class="col" style="text-align:center;">
 
                             <!-- Title -->
-                            <h4 class="card-header-title" id="exampleModalCenterTitle">
+                            <h4 class="card-header-title edit-title">
                                 Add a Farm
                             </h4>
 
@@ -230,7 +235,7 @@
                         <div class="col-auto">
 
                             <!-- Close -->
-                            <button type="button" class="close next-farm-form">
+                            <button type="button" class="close post-farm-form">
                                 <span class="fe fe-check"></span>
                             </button>
 
@@ -239,7 +244,10 @@
                 </div>
                 <div class="card-body">
                     <!-- Farm Map -->
-                    <div id='map' style='width: 100%; height: 300px;'></div>
+                    <div style="width: 100%;">
+                        <div style="width:100% !important; height:280px;" id="map"></div>
+                        <pre id='coordinates' class='coordinates'></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,7 +336,7 @@
                                     </div>
                                 </div> <!-- / .row -->
                             </a>
-                            <a href="project-overview.html" class="list-group-item px-0">
+                            <a href="#" class="list-group-item px-0">
 
                                 <div class="row align-items-center">
                                     <div class="col-auto">
@@ -1412,7 +1420,7 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-2 name">
-                                                    <a href="#">Homepage Redesign</a>
+                                                    <a class="farm-info" href="#">Homepage Redesign</a>
                                                 </h4>
 
                                                 <!-- Subtitle -->
@@ -1439,7 +1447,7 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-2 name">
-                                                    <a href="#">Travels &amp; Time</a>
+                                                    <a class="farm-info" href="#">Travels &amp; Time</a>
                                                 </h4>
 
                                                 <!-- Subtitle -->
@@ -1472,7 +1480,7 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-1 name">
-                                                    <a href="#">Homepage Redesign</a>
+                                                    <a class="farm-info" href="#">Homepage Redesign</a>
                                                 </h4>
 
                                                 <!-- Text -->
@@ -1502,7 +1510,7 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-1 name">
-                                                    <a href="#">Travels &amp; Time</a>
+                                                    <a class="farm-info" href="#">Travels &amp; Time</a>
                                                 </h4>
 
                                                 <!-- Text -->
@@ -2401,6 +2409,7 @@
 <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
 <script>
     $(document).ready(function() {
+        var farm_lat, farm_lng;
         $.ajax({
 
             url: "prof_get", //here you can use servlet,jsp, etc
@@ -2716,10 +2725,8 @@
             $(".second-farm-form").addClass("right");
         });
         $('.farm-card-view').on('click', function() {
-            $('.nav-link-data').slideUp(500);
-            $('.nav-link').removeClass("active");
-            $(this).addClass("active");
-            setTimeout(function(){$(".profile-info-row .farm-edit").slideDown(500)}, 500);
+            $('#newPost').modal('show');
+            $('#farm-edit').find('.edit-title').html($(this).find('.farm-info').html());
         });
 
         $('#third-farm-btn-right').on('click', function() {
@@ -2733,9 +2740,36 @@
         });
 
         mapboxgl.accessToken = 'pk.eyJ1IjoiN2hlNHIxc2UiLCJhIjoiY2prcXpzdTV6MXpwMjN1czc2eG5uZjd6bSJ9.P4KTUArF5MU9eY-WrOCJdg';
+        var coordinates = document.getElementById('coordinates');
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v10'
+        });
+
+        var marker = new mapboxgl.Marker({
+            draggable: true
+        })
+            .setLngLat([0, 0])
+            .addTo(map);
+
+        function onDragEnd() {
+            var lngLat = marker.getLngLat();
+            coordinates.style.display = 'none';
+            coordinates.innerHTML = 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+        }
+
+        marker.on('dragend', onDragEnd);
+        // Add geolocate control to the map.
+        map.addControl(new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true
+        }));
+
+        $('.post-farm-form').on('click', function() {
+            var lngLat = marker.getLngLat();
+            alert(lngLat.lng + ' ' + lngLat.lat);
         });
     });
 

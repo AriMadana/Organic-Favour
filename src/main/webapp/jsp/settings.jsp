@@ -1571,7 +1571,6 @@
 <script src="${pageContext.request.contextPath}/assets/libs/quill/dist/quill.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/select2/dist/js/select2.min.js"></script>
-
 <!-- Theme JS -->
 <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
 

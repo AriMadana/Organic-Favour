@@ -847,117 +847,300 @@
                     </div>
                 </div> <!-- / .row -->
             </div> <!-- / .header-body -->
+            <!-- Nearby and Suggesstion -->
+            <div class="row">
+                <div class="col-12 col-xl-8">
 
-            <!-- Footer -->
-            <div class="header-footer">
+                    <!-- Nearby Farms -->
+                    <div class="card">
+                        <div class="card-header">
 
-                <!-- Chart -->
-                <div class="chart">
-                    <canvas id="headerChart" class="chart-canvas"></canvas>
+                            <!-- Title -->
+                            <h4 class="card-header-title">
+                                Top Earners
+                            </h4>
+
+                        </div>
+                        <div class="table-responsive mb-0">
+                            <table class="table table-sm table-nowrap card-table">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        Member
+                                    </th>
+                                    <th>
+                                        Schedule
+                                    </th>
+                                    <th>
+                                        Hours Billed
+                                    </th>
+                                    <th>
+                                        Completion
+                                    </th>
+                                    <th>
+                                        Effective Rate
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-xs d-inline-block mr-2">
+                                            <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                        </div>
+
+                                        <!-- Title -->
+                                        <span>Dianna Smiley</span>
+
+                                    </td>
+                                    <td>
+                                        <span class="text-success">●</span> On Schedule
+                                    </td>
+                                    <td>
+                                        271
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col-auto">
+
+                                                <span class="mr-2">55%</span>
+
+                                            </div>
+                                            <div class="col">
+
+                                                <!-- Progress -->
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- / .row -->
+                                    </td>
+                                    <td>
+                                        $55.25%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-xs d-inline-block mr-2">
+                                            <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                        </div>
+
+                                        <!-- Title -->
+                                        <span>Ab Hadley</span>
+
+                                    </td>
+                                    <td>
+                                        <span class="text-warning">●</span> Delayed
+                                    </td>
+                                    <td>
+                                        44
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col-auto">
+
+                                                <span class="mr-2">25%</span>
+
+                                            </div>
+                                            <div class="col">
+
+                                                <!-- Progress -->
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- / .row -->
+                                    </td>
+                                    <td>
+                                        $122.52%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-xs d-inline-block mr-2">
+                                            <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                                        </div>
+
+                                        <!-- Title -->
+                                        <span>Adolfo Hess</span>
+
+                                    </td>
+                                    <td>
+                                        <span class="text-success">●</span> On Schedule
+                                    </td>
+                                    <td>
+                                        271
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col-auto">
+
+                                                <span class="mr-2">55%</span>
+
+                                            </div>
+                                            <div class="col">
+
+                                                <!-- Progress -->
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- / .row -->
+                                    </td>
+                                    <td>
+                                        $55.25%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-xs d-inline-block mr-2">
+                                            <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                                        </div>
+
+                                        <!-- Title -->
+                                        <span>Daniela Dewitt</span>
+
+                                    </td>
+                                    <td>
+                                        <span class="text-warning">●</span> Delayed
+                                    </td>
+                                    <td>
+                                        44
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col-auto">
+
+                                                <span class="mr-2">25%</span>
+
+                                            </div>
+                                            <div class="col">
+
+                                                <!-- Progress -->
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- / .row -->
+                                    </td>
+                                    <td>
+                                        $122.52%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-xs d-inline-block mr-2">
+                                            <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                                        </div>
+
+                                        <!-- Title -->
+                                        <span>Miyah Myles</span>
+
+                                    </td>
+                                    <td>
+                                        <span class="text-success">●</span> On Schedule
+                                    </td>
+                                    <td>
+                                        271
+                                    </td>
+                                    <td>
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col-auto">
+
+                                                <span class="mr-2">55%</span>
+
+                                            </div>
+                                            <div class="col">
+
+                                                <!-- Progress -->
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- / .row -->
+                                    </td>
+                                    <td>
+                                        $55.25%
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-12 col-xl-4">
+                    <!-- Best Products -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col">
 
-            </div>
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Orders
+                                    </h4>
+
+                                </div>
+                                <div class="col-auto mr--3">
+                                    <!-- Caption -->
+                                    <span class="text-muted">
+                                        Show affiliate:
+                                    </span>
+
+                                </div>
+                                <div class="col-auto">
+
+                                    <!-- Toggle -->
+                                    <div class="custom-control custom-checkbox-toggle">
+                                        <input type="checkbox" class="custom-control-input" id="cardToggle" data-toggle="chart" data-target="#ordersChart" data-add="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[15,10,20,12,7,0,8,16,18,16,10,22],&quot;backgroundColor&quot;:&quot;#d2ddec&quot;,&quot;label&quot;:&quot;Affiliate&quot;}]}}">
+                                        <label class="custom-control-label" for="cardToggle"></label>
+                                    </div>
+
+                                </div>
+                            </div> <!-- / .row -->
+
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Chart -->
+                            <div class="chart">
+                                <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                    <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                        <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                                        </div>
+                                    </div>
+                                    <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                <canvas id="ordersChart" class="chart-canvas chartjs-render-monitor" width="1372" height="600" style="display: block; height: 300px; width: 686px;">
+                                </canvas>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
 
         </div> <!-- / .container -->
     </div> <!-- / .header -->
 
     <!-- CARDS -->
     <div class="container mt--6">
-        <div class="row">
-            <div class="col-12 col-xl-8">
 
-                <!-- Orders -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="row align-items-center">
-                            <div class="col">
-
-                                <!-- Title -->
-                                <h4 class="card-header-title">
-                                    Orders
-                                </h4>
-
-                            </div>
-                            <div class="col-auto mr--3">
-
-                                <!-- Caption -->
-                                <span class="text-muted">
-                      Show affiliate:
-                    </span>
-
-                            </div>
-                            <div class="col-auto">
-
-                                <!-- Toggle -->
-                                <div class="custom-control custom-checkbox-toggle">
-                                    <input type="checkbox" class="custom-control-input" id="cardToggle" data-toggle="chart" data-target="#ordersChart" data-add='{"data":{"datasets":[{"data":[15,10,20,12,7,0,8,16,18,16,10,22],"backgroundColor":"#d2ddec","label":"Affiliate"}]}}'>
-                                    <label class="custom-control-label" for="cardToggle"></label>
-                                </div>
-
-                            </div>
-                        </div> <!-- / .row -->
-
-                    </div>
-                    <div class="card-body">
-
-                        <!-- Chart -->
-                        <div class="chart">
-                            <canvas id="ordersChart" class="chart-canvas"></canvas>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-xl-4">
-
-                <!-- Devices -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="row align-items-center">
-                            <div class="col">
-
-                                <!-- Title -->
-                                <h4 class="card-header-title">
-                                    Devices
-                                </h4>
-
-                            </div>
-                            <div class="col-auto">
-
-                                <!-- Tabs -->
-                                <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-                                    <li class="nav-item" data-toggle="chart" data-target="#devicesChart" data-update='{"data":{"datasets":[{"data":[60,25,15]}]}}'>
-                                        <a href="#" class="nav-link active" data-toggle="tab">
-                                            All
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" data-toggle="chart" data-target="#devicesChart" data-update='{"data":{"datasets":[{"data":[15,45,20]}]}}'>
-                                        <a href="#" class="nav-link" data-toggle="tab">
-                                            Direct
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div> <!-- / .row -->
-
-                    </div>
-                    <div class="card-body">
-
-                        <!-- Chart -->
-                        <div class="chart chart-appended">
-                            <canvas id="devicesChart" class="chart-canvas" data-target="#devicesChartLegend"></canvas>
-                        </div>
-
-                        <!-- Legend -->
-                        <div id="devicesChartLegend" class="chart-legend"></div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div> <!-- / .row -->
         <div class="row">
             <div class="col-12 col-lg-6 col-xl">
 

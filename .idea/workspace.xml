@@ -2,13 +2,103 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="orgranic-favour:war" />
+      <artifact name="orgranic-favour:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94134a41-d032-4c62-863f-a6d8fa6d07a7" name="Default Changelist" comment="What The Fuck">
+    <list default="true" id="94134a41-d032-4c62-863f-a6d8fa6d07a7" name="Default Changelist" comment="Setting">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ResetPasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/testing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/fruit-location.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/mapbox-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/select2-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/dropzone-bs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/dropzone.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/forget-psw.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/otp_configure_reset.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/orgranic_favour_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/orgranic_favour_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgranic-favour.iml" beforeDir="false" afterPath="$PROJECT_DIR$/orgranic-favour.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/dashboard-2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/dashboard-2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/ServletInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/ServletInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/dao/UsersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/dao/UsersDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/db/DBFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/db/DBFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/db/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/db/Usr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/mail/EmailService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/mail/EmailService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/mail/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/mail/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/model/UsersModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/model/UsersModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/ServletInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/ServletInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/dao/UsersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/dao/UsersDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/db/DBFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/db/DBFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/db/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/db/Usr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/mail/EmailService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/mail/EmailService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/mail/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/mail/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/model/UsersModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/classes/com/ethereals/organic_favour/model/UsersModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/activation-1.0.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/activation-1.0.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.10.Final.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.10.Final.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.10.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/mail-1.4.7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/mail-1.4.7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.46.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.46.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.19.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-devtools-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-devtools-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.0.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.1.Final.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/jsp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgranic-favour-1.0-SNAPSHOT/jsp/dashboard.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,36 +173,60 @@
     <session id="-1236704683">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="14" />
-          <entry key="jsp" value="8" />
-          <entry key="properties" value="1" />
+          <entry key="MODULES/mdl-orgranic-favour" value="2" />
+          <entry key="css" value="2" />
+          <entry key="html" value="1" />
+          <entry key="java" value="79" />
+          <entry key="js" value="5" />
+          <entry key="jsp" value="28" />
+          <entry key="organic_favour" value="2" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="14" />
-          <entry key="JSP" value="8" />
-          <entry key="Properties" value="1" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="79" />
+          <entry key="JSP" value="28" />
+          <entry key="JavaScript" value="5" />
+          <entry key="Properties" value="3" />
+          <entry key="UML" value="4" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="14" />
-          <entry key="jsp" value="226" />
-          <entry key="txt" value="64" />
+          <entry key="java" value="10962" />
+          <entry key="js" value="210" />
+          <entry key="jsp" value="12267" />
+          <entry key="properties" value="61" />
+          <entry key="txt" value="81" />
+          <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14" />
-          <entry key="JSP" value="226" />
-          <entry key="PLAIN_TEXT" value="64" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="4" />
+          <entry key="JAVA" value="10962" />
+          <entry key="JSP" value="12260" />
+          <entry key="JavaScript" value="210" />
+          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="Properties" value="61" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -122,11 +236,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="239" column="41" selection-start-line="239" selection-start-column="41" selection-end-line="239" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignInController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="435">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,45 +267,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/mail/EmailService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23625">
-              <caret line="1575" column="55" selection-start-line="1575" selection-start-column="55" selection-end-line="1575" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ServletInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="1160">
+              <caret line="94" column="34" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileImages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="179" column="49" selection-start-line="179" selection-start-column="49" selection-end-line="179" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dashboard-2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="1829" column="89" lean-forward="true" selection-start-line="1829" selection-start-column="16" selection-end-line="1829" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dashboard-3.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="1145" column="22" selection-start-line="1145" selection-start-column="22" selection-end-line="1145" selection-end-column="22" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/mapbox-custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="93" column="66" selection-end-line="170" />
             </state>
           </provider>
         </entry>
@@ -181,8 +323,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/DBFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3000">
-              <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+            <state relative-caret-position="470">
+              <caret line="172" column="54" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,28 +333,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="67" />
+            <state>
+              <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/post-upload.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="99" lean-forward="true" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/logout.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="489">
+              <caret line="98" column="38" lean-forward="true" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,38 +358,48 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>first-n</find>
-      <find>upda</find>
-      <find>abc</find>
-      <find>firt</find>
-      <find>emailSV</find>
-      <find>to</find>
-      <find>sendMail</find>
-      <find>00000</find>
-      <find>account</find>
-      <find>setting</find>
-      <find>update</find>
+      <find>select</find>
+      <find>devices</find>
+      <find>What</find>
+      <find>country</find>
+      <find>set_country</find>
+      <find>select2</find>
+      <find>Orders</find>
+      <find>#fuck</find>
+      <find>fuck</find>
+      <find>filter-input</find>
+      <find>filter-ctrl</find>
+      <find>FeatureCollection</find>
+      <find>filterInput</find>
+      <find>places</find>
+      <find>musics</find>
+      <find>description</find>
+      <find>dark</find>
+      <find>farm-card-view</find>
+      <find>Freaking Farm E</find>
+      <find>layerID</find>
       <find>map</find>
-      <find>useremail</find>
-      <find>first</find>
-      <find>%</find>
-      <find>${</find>
-      <find>last</find>
-      <find>email</find>
-      <find>&lt;!-- Email</find>
-      <find>Holy</find>
-      <find>&quot;assets/</find>
-      <find>e</find>
+      <find>second-farm-form</find>
+      <find>farm-edit</find>
+      <find>dropzone</find>
+      <find>left</find>
+      <find>first-farm-form</find>
+      <find>third-farm-btn</find>
+      <find>third-farm-btn-right</find>
+      <find>third-farm-form</find>
+      <find>third-farm-btn-left</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;${pageContext.request.contextPath}/</replace>
       <replace>&quot;${pageContext.request.contextPath}/assets/</replace>
+      <replace>ftpServic</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -270,23 +416,44 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/loginModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/LoginModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProefileController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/UserData.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/DBFactory.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/update_employee.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/DashboardController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/session/SessionControl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignInController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/sign-up-illustration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dashboard.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/post-upload.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ftp/FTPService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/testing.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/Usr.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/DashboardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ResetPasswordController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/dropzone.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ftp/FileUpload.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dropzone.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/theme.min.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/HostingForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/file/ProfileImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileImages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ftp/uploadPhoto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/select2.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/select2-demo.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dashboard.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/mapbox-custom.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dashboard-2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dashboard-3.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
       </list>
     </option>
   </component>
@@ -316,11 +483,21 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="orgranic-favour Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1004" />
-    <option name="height" value="1000" />
+    <option name="x" value="650" />
+    <option name="width" value="630" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -330,14 +507,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
               <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
@@ -381,7 +561,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="organic_favour" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
@@ -390,7 +570,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="organic_favour" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="organic_favour" type="462c0819:PsiDirectoryNode" />
+              <item name="ftp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
@@ -430,30 +619,117 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="select2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="select2" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="select2" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organic-favour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organic-favour" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="/&#9;FILE&#9;uml://MODULES/mdl-orgranic-favour" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534065909758" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534861334950" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/img" />
       <recent name="$PROJECT_DIR$/src/main/webapp/jsp" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -468,12 +744,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8 ">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="orgranic-favour" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ethereals.organic_favour.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8 " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/organic-favour" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="orgranic-favour:war">
+        <artifact name="orgranic-favour:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/organic-favour" />
           </settings>
@@ -538,9 +822,8 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="orgranic-favour:war" />
+          <artifact name="orgranic-favour:war exploded" />
         </option>
       </method>
     </configuration>
@@ -617,6 +900,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Tomcat Server.Tomcat 8 " />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -633,7 +920,12 @@
       <workItem from="1533925404632" duration="12518000" />
       <workItem from="1533962819067" duration="14525000" />
       <workItem from="1533995719146" duration="7722000" />
-      <workItem from="1534004101939" duration="9293000" />
+      <workItem from="1534004101939" duration="31734000" />
+      <workItem from="1534170404244" duration="15010000" />
+      <workItem from="1534186470719" duration="137252000" />
+      <workItem from="1534530521390" duration="10165000" />
+      <workItem from="1534588391962" duration="32992000" />
+      <workItem from="1534698000859" duration="27586000" />
     </task>
     <task id="LOCAL-00001" summary="pst">
       <created>1533932063947</created>
@@ -670,17 +962,73 @@
       <option name="project" value="LOCAL" />
       <updated>1534015557012</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Setting">
+      <created>1534065961489</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534065961489</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Setting">
+      <created>1534078612024</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534078612024</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Setting">
+      <created>1534261821080</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534261821080</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Setting">
+      <created>1534588245904</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534588245904</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Setting">
+      <created>1534672313432</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534672313432</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Setting">
+      <created>1534686687948</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1534686687948</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Setting">
+      <created>1534849079517</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534849079518</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Setting">
+      <created>1534853241311</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534853241311</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46056000" />
+    <option name="totallyTimeSpent" value="291502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26494345" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21405493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -691,7 +1039,43 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.33150685" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.37123287" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.33150685" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4997233" weight="0.039726026" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32876712" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32972974" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32956383" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32956383" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2358643" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Learn" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.33150685" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -709,12 +1093,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32956383" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32956383" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -728,58 +1112,267 @@
     <MESSAGE value="post-upload for Zway" />
     <MESSAGE value="update again" />
     <MESSAGE value="What The Fuck" />
-    <option name="LAST_COMMIT_MESSAGE" value="What The Fuck" />
+    <MESSAGE value="Setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/LoginModel.java" />
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProefileController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/UsersModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/display_employee.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-up-illustration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="-3855">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/post-upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="99" lean-forward="true" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/mail/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/logout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/file/FileCreation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/libs/dropzone/dist/min/dropzone.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/otp_configure.jsp">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        <state relative-caret-position="154">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ethereals.organic_favour">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ethereals.organic_favour</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ethereals.organic_favour.controller.PageController</node>
+            <node x="" y="">com.ethereals.organic_favour.controller.SignUpController</node>
+            <node x="" y="">com.ethereals.organic_favour.dao</node>
+            <node x="" y="">com.ethereals.organic_favour.model</node>
+            <node x="" y="">com.ethereals.organic_favour.ServletInitializer</node>
+            <node x="" y="">com.ethereals.organic_favour.controller.RegistrationController</node>
+            <node x="" y="">com.ethereals.organic_favour.controller.SignInController</node>
+            <node x="" y="">com.ethereals.organic_favour.controller.DashboardController</node>
+            <node x="" y="">com.ethereals.organic_favour.controller.ProfileImages</node>
+            <node x="" y="">com.ethereals.organic_favour.ftp</node>
+            <node x="" y="">com.ethereals.organic_favour.session</node>
+            <node x="" y="">com.ethereals.organic_favour.Application</node>
+            <node x="" y="">com.ethereals.organic_favour.db</node>
+            <node x="" y="">com.ethereals.organic_favour.mail</node>
+            <node x="" y="">com.ethereals.organic_favour.file</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="183.0" y="163.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/testing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/forget-psw.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dropzone-bs.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-724" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/dropzone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="1570" column="31" selection-start-line="1570" selection-start-column="31" selection-end-line="1570" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-orgranic-favour">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-orgranic-favour</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-orgranic-favour</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="92.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ftp/FileUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/Usr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/ethereals/organic_favour/model/UsersModel.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dropzone.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="428">
+          <caret line="848" column="33" selection-start-line="848" selection-start-column="22" selection-end-line="848" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/update_employee.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/theme.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="6" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="6" />
+        <state>
+          <caret column="9147" lean-forward="true" selection-start-column="9147" selection-end-column="9147" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/LoginModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/otp_configure_reset.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="237">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#156#157#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ResetPasswordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/model/HostingForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+          <folding>
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/select2.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9600">
+          <caret line="640" selection-start-line="640" selection-end-line="640" />
         </state>
       </provider>
     </entry>
@@ -793,98 +1386,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/session/SessionControl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ftp/uploadPhoto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        <state relative-caret-position="1380">
+          <caret line="92" column="56" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.3.RELEASE/spring-boot-autoconfigure-2.0.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ftp/FTPService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="484" column="44" selection-start-line="484" selection-start-column="44" selection-end-line="484" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/RegistrationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/libs/select2/dist/css/select2.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state>
+          <caret column="14243" selection-start-column="14222" selection-end-column="14243" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/select2-demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1687">
+          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9180">
+          <caret line="614" column="24" selection-start-line="614" selection-start-column="24" selection-end-line="614" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/DashboardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="270">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/display_employee.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dashboard.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/file/ProfileImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21600">
-          <caret line="1440" column="7" selection-start-line="1440" selection-start-column="7" selection-end-line="1440" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-up-illustration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3855">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sign-in-illustration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/post-upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="99" lean-forward="true" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/dao/UsersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="540">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -893,52 +1463,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/db/DBFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+        <state relative-caret-position="470">
+          <caret line="172" column="54" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/mail/EmailService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/mapbox-custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="190">
+          <caret line="93" column="66" selection-end-line="170" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/ServletInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="489">
+          <caret line="98" column="38" lean-forward="true" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dashboard-3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="1145" column="22" selection-start-line="1145" selection-start-column="22" selection-end-line="1145" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dashboard-2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="1829" column="89" lean-forward="true" selection-start-line="1829" selection-start-column="16" selection-end-line="1829" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignInController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="435">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/settings.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/SignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23625">
-          <caret line="1575" column="55" selection-start-line="1575" selection-start-column="55" selection-end-line="1575" selection-end-column="55" />
+        <state relative-caret-position="1160">
+          <caret line="94" column="34" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ethereals/organic_favour/controller/ProfileImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="179" column="49" selection-start-line="179" selection-start-column="49" selection-end-line="179" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="239" column="41" selection-start-line="239" selection-start-column="41" selection-end-line="239" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -13,4 +13,8 @@ public interface Usr {
     public static final String cover = "cover";
     public static final String active = "active";
     public static final String otp = "otp";
+
+
+
+
 }

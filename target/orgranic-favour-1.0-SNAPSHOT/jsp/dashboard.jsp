@@ -22,9 +22,225 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/theme.min.css">
 
+  <!-- Map Box -->
+  <%--<script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>--%>
+  <%--<link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />--%>
   <title>Dashkit</title>
+  <style>
+    .second-post-form.right {
+      -webkit-transform: translateX(200%);
+      -moz-transform: translateX(200%);
+      -ms-transform: translateX(200%);
+      -o-transform: translateX(200%);
+      transform: translateX(200%);
+      -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
+      transition: transform 0.5s ease-in;
+    }
+    .first-post-form.left {
+      -webkit-transform: translateX(-200%);
+      -moz-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      -o-transform: translateX(-200%);
+      transform: translateX(-200%);
+      -webkit-transition: -webkit-transform 0.5s ease-out; /* Safari */
+      transition: transform 0.5s ease-out;
+    }
+    .second-post-form {
+      -webkit-transition: -webkit-transform 0.5s ease-out; /* Safari */
+      transition: transform 0.5s ease-out;
+    }
+    .first-post-form {
+      -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
+      transition: transform 0.5s ease-in;
+    }
+  </style>
 </head>
 <body>
+<div class="modal fade" id="newSellPost" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background: transparent;">
+      <div class="modal-card card first-post-form" style="width:100%;position:absolute;left:0;">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col-auto">
+
+              <!-- Close -->
+              <button type="button" class="close btn-sm" data-dismiss="modal" aria-label="Close">
+                <span class="fe fe-power" style="font-size: 20px;"></span>
+              </button>
+
+            </div>
+            <div class="col" style="text-align:center;">
+
+              <!-- Title -->
+              <h4 class="card-header-title" id="exampleModalCenterTitle">
+                <span class="fe fe-package mr-2"></span>Add a Post
+              </h4>
+
+            </div>
+            <div class="col-auto">
+
+              <!-- Close -->
+              <button type="button" class="close next-farm-form">
+                <span class="fe fe-arrow-right"></span>
+              </button>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+
+        <div class="card-body">
+          <!-- Single -->
+          <div class="row profile-info-row">
+            <!-- Freaking Farms -->
+            <div class="farms nav-link-data" data-toggle="lists" data-lists-values="[&quot;name&quot;]" style="width: 100%;">
+              <div class="container-fluid" data-toggle="lists" data-lists-class="listAlias" data-lists-values="[&quot;name&quot;]">
+                <div class="row mb-4">
+                  <div class="col" style="margin-right:-20px;">
+
+                    <!-- Form -->
+                    <form>
+                      <div class="input-group input-group-lg input-group-merge">
+                        <input type="text" class="form-control form-control-prepended search" placeholder="Search">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <span class="fe fe-search"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Navigation (button group) -->
+                    <%--<div class="nav btn-group" role="tablist">--%>
+                      <%--<button class="btn btn-lg btn-white active show" data-toggle="tab" data-target="#tabPaneOne" role="tab" aria-controls="tabPaneOne" aria-selected="true">--%>
+                        <%--<span class="fe fe-grid"></span>--%>
+                      <%--</button>--%>
+                      <%--<button class="btn btn-lg btn-white" data-toggle="tab" data-target="#tabPaneTwo" role="tab" aria-controls="tabPaneTwo" aria-selected="false">--%>
+                        <%--<span class="fe fe-list"></span>--%>
+                      <%--</button>--%>
+                    <%--</div> <!-- / .nav -->--%>
+
+                  </div>
+                </div> <!-- / .row -->
+
+                <!-- Tab content -->
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="tabPaneOne" role="tabpanel">
+                    <div class="row listAlias"><div class="col-12 col-md-6 col-xl-4">
+
+                      <!-- Card -->
+                      <div class="card user-farm-card">
+                        <a href="#">
+                          <img src="/organic-favour/assets/img/avatars/projects/project-1.jpg" alt="..." class="card-img-top">
+                        </a>
+                        <div class="card-body" style="padding:2px 2px 2px 2px">
+                          <div class="row align-items-center">
+                            <div class="col" style="padding:10px 15px 5px 15px;">
+
+                              <!-- Title -->
+                              <h5 class="card-title mb-2 name">
+                                <div class="farmName" style="white-space:nowrap; overflow: hidden;
+    text-overflow: ellipsis; ">Homepage Redesign Bar Nyar</div>
+                              </h5>
+
+                            </div>
+                          </div>
+
+                        </div> <!-- / .card-body -->
+                      </div>
+
+                    </div><div class="col-12 col-md-6 col-xl-4">
+
+                      <!-- Card -->
+                      <div class="card user-farm-card">
+                        <a href="#">
+                          <img src="/organic-favour/assets/img/avatars/projects/project-2.jpg" alt="..." class="card-img-top">
+                        </a>
+                        <div class="card-body" style="padding:2px 2px 2px 2px">
+                          <div class="row align-items-center">
+                            <div class="col" style="padding:10px 15px 5px 15px;">
+
+                              <!-- Title -->
+                              <h5 class="card-title mb-2 name">
+                                <div class="farmName" style="white-space:nowrap; overflow: hidden;
+    text-overflow: ellipsis; ">Travels and Time What the</div>
+                              </h5>
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                        </div> <!-- / .card-body -->
+                      </div>
+
+                    </div></div> <!-- / .row -->
+                  </div>
+                </div> <!-- / .tab-content -->
+
+              </div> <!-- / .container-fluid -->
+            </div>
+          </div>
+          <%--<div data-toggle="quill" data-quill-placeholder="Quill WYSIWYG editor"></div>--%>
+        </div>
+      </div>
+      <!-- End of First Post Form -->
+
+
+
+
+      <div class="modal-card card second-post-form right" style="right:0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col-auto">
+
+              <!-- Close -->
+              <button type="button" class="close btn-sm previous-post-form">
+                <span class="fe fe-arrow-left"></span>
+              </button>
+
+            </div>
+            <div class="col" style="text-align:center;">
+
+              <!-- Title -->
+              <h4 class="card-header-title" id="farmSelected">
+                Add a Post
+              </h4>
+
+            </div>
+            <div class="col-auto">
+
+              <!-- Close -->
+              <button type="button" class="close">
+                <span class="fe fe-check"></span>
+              </button>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+        <div class="card-body">
+          <select class="form-control" data-toggle="select" multiple>
+            <option data-select2-id="19">CSS</option>
+            <option data-select2-id="20">HTML</option>
+            <option data-select2-id="21">JavaScript</option>
+            <option data-select2-id="22">Bootstrap</option>
+          </select>
+
+          <div class="btn-group btn-group-sm mr-2 mb-3" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
 
 <!-- TOPNAV
 ================================================== -->
@@ -190,7 +406,7 @@
                 </div> <!-- / .row -->
 
               </a>
-              <a href="profile-posts.html" class="list-group-item px-0">
+              <a href="profile" class="list-group-item px-0">
 
                 <div class="row align-items-center">
                   <div class="col-auto">
@@ -217,7 +433,7 @@
                 </div> <!-- / .row -->
 
               </a>
-              <a href="profile-posts.html" class="list-group-item px-0">
+              <a href="profile" class="list-group-item px-0">
 
                 <div class="row align-items-center">
                   <div class="col-auto">
@@ -540,7 +756,7 @@
 
         <!-- Menu -->
         <div class="dropdown-menu dropdown-menu-right">
-          <a href="profile-posts.html" class="dropdown-item">Profile</a>
+          <a href="profile" class="dropdown-item">Profile</a>
           <a href="settings.html" class="dropdown-item">Settings</a>
           <hr class="dropdown-divider">
           <a href="logout" class="dropdown-item">Logout</a>
@@ -596,68 +812,114 @@
     <div class="container">
 
       <!-- Body -->
-      <div class="header-body">
-        <div class="row align-items-end">
-          <div class="col">
+      <div class="header-body" style="border-bottom: 0;padding-bottom: 0;">
+        <div class="row">
+          <div class="col-12 col-xl-4">
 
-            <!-- Pretitle -->
-            <h6 class="header-pretitle text-secondary">
-              Overview
-            </h6>
+            <!-- Devices -->
+            <div class="card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
 
-            <!-- Title -->
-            <h1 class="header-title text-white">
-              Performance
-            </h1>
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Devices
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
+                      <li class="nav-item" data-toggle="chart" data-target="#devicesChart" data-update='{"data":{"datasets":[{"data":[60,25,15]}]}}'>
+                        <a href="#" class="nav-link active" data-toggle="tab">
+                          All
+                        </a>
+                      </li>
+                      <li class="nav-item" data-toggle="chart" data-target="#devicesChart" data-update='{"data":{"datasets":[{"data":[15,45,20]}]}}'>
+                        <a href="#" class="nav-link" data-toggle="tab">
+                          Direct
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="card-body">
+
+                <!-- Chart -->
+                <div class="chart chart-appended">
+                  <canvas id="devicesChart" class="chart-canvas" data-target="#devicesChartLegend"></canvas>
+                </div>
+
+                <!-- Legend -->
+                <div id="devicesChartLegend" class="chart-legend"></div>
+
+              </div>
+            </div>
 
           </div>
-          <div class="col-auto">
+          <div class="col-12 col-xl-8">
 
-            <!-- Nav -->
-            <ul class="nav nav-tabs header-tabs">
-              <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="$" data-suffix="k">
-                <a href="#" class="nav-link text-center active" data-toggle="tab">
-                  <h6 class="header-pretitle text-secondary">
-                    Earnings
-                  </h6>
-                  <h3 class="text-white mb-0">
-                    $19.2k
-                  </h3>
-                </a>
-              </li>
-              <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[50,75, 35,25,55,87,67,53,25,80,87,45]}]}}' data-prefix="" data-suffix="k">
-                <a href="#" class="nav-link text-center" data-toggle="tab">
-                  <h6 class="header-pretitle text-secondary">
-                    Sessions
-                  </h6>
-                  <h3 class="text-white mb-0">
-                    92.1k
-                  </h3>
-                </a>
-              </li>
-              <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[40,57,25,50,57,32,46,28,59,34,52,48]}]}}' data-prefix="" data-suffix="%">
-                <a href="#" class="nav-link text-center" data-toggle="tab">
-                  <h6 class="header-pretitle text-secondary">
-                    Bounce
-                  </h6>
-                  <h3 class="text-white mb-0">
-                    50.2%
-                  </h3>
-                </a>
-              </li>
-            </ul>
+            <!-- Orders -->
+            <div class="card" style="background: transparent;border:0;">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Orders
+                    </h4>
+
+                  </div>
+                  <div class="col-auto mr--3">
+                    <!-- Caption -->
+                    <span class="text-muted">
+                      Show affiliate:
+                    </span>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <button type="button" class="btn btn-primary" data-target="#newSellPost" data-toggle="modal">
+                      <span class="fe fe-package mr-2"></span>New Post
+                    </button>
+                    <!-- Toggle -->
+                    <%--<div class="custom-control custom-checkbox-toggle">--%>
+                      <%--<input type="checkbox" class="custom-control-input" id="cardToggle" data-toggle="chart" data-target="#ordersChart" data-add='{"data":{"datasets":[{"data":[15,10,20,12,7,0,8,16,18,16,10,22],"backgroundColor":"#d2ddec","label":"Affiliate"}]}}'>--%>
+                      <%--<label class="custom-control-label" for="cardToggle"></label>--%>
+                    <%--</div>--%>
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="card-body">
+
+                <!-- Chart -->
+                <div class="chart">
+                  <canvas id="ordersChart" class="chart-canvas"></canvas>
+                </div>
+
+              </div>
+            </div>
 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .header-body -->
 
-      <!-- Footer -->
-      <div class="header-footer">
 
+      <!-- Footer -->
+      <div class="header-footer" style="margin-top:-20px;margin-bottom:20px;padding-top:0;padding-bottom:0;text-align:center;">
+        <span class="fe fe-chevron-down" style="color:#fffff0;font-size:80px;"></span>
         <!-- Chart -->
-        <div class="chart">
-          <canvas id="headerChart" class="chart-canvas"></canvas>
-        </div>
+        <%--<div class="chart">--%>
+          <%--<canvas id="headerChart" class="chart-canvas"></canvas>--%>
+        <%--</div>--%>
 
       </div>
 
@@ -1430,12 +1692,22 @@
 <script src="${pageContext.request.contextPath}/assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/list.js/dist/list.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/quill/dist/quill.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/libs/select2/dist/js/select2.min.js"></script>
-
+<script src="${pageContext.request.contextPath}/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
 <!-- Theme JS -->
 <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
-
+<script>
+  $('.user-farm-card').on('click', function() {
+      $('.first-post-form').addClass("left");
+      $('.second-post-form').removeClass("right");
+      var farmName = $(this).find('.farmName').html();
+      $('#farmSelected').html(farmName);
+  });
+  $(".previous-post-form").on("click", function() {
+      $(".first-post-form").removeClass("left");
+      $(".second-post-form").addClass("right");
+  });
+</script>
 </body>
 </html>
 <% } %>

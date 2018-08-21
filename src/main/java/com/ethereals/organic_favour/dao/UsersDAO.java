@@ -14,8 +14,14 @@ public class UsersDAO {
     private final String[] init_reg = new String[] {Usr.email, Usr.password, Usr.active, Usr.otp};
     private final String[] del_otp = new String[] {Usr.otp};
     private final String[] conf_act = new String[] {Usr.active};
+
     private final String[] re_otp = new String[] {Usr.otp};
+    private final String[] user_profile = new String[] {Usr.profile};
+    private final String[] user_cover = new String[] {Usr.cover};
+    private final String[] user_profile_cover = new String[] {Usr.profile,Usr.cover};
+
     private final String[] user_data = new String[] {Usr.first_name,Usr.last_name,Usr.email,Usr.ph_no,Usr.birth,Usr.profile,Usr.cover};
+
     public UsersDAO() {
         dbFactory = new DBFactory();
     }
@@ -38,6 +44,66 @@ public class UsersDAO {
         return result;
 
     }
+    public String postProfileCover(String id, String [] photo) {
+        String condition = "usr_id = '" + id +"'" ;
+        String result = dbFactory.select(Usr.table, "usr_id", condition);
+        return result;
+
+    }
+    public String postProfile(String id, String pfName) {
+        Object [] data = new Object[]{pfName};
+        String condition = "usr_id = '" + id +"'" ;
+        Boolean boo =  dbFactory.update(Usr.table,user_profile,data,condition);
+       // String result = dbFactory.select(Usr.table, "usr_id", condition);
+        System.out.println("boolee is"+ boo + pfName + "is pfname" + data[0] ) ;
+        if(boo) {
+            return pfName;
+        } else {
+            return "Failed";
+        }
+
+    }
+    public String postCover(String id, String pName, String photo) {
+        if(photo == "cover") {
+            Object [] data = new Object[]{pName};
+            String condition = "usr_id = '" + id +"'" ;
+            Boolean boo =  dbFactory.update(Usr.table,user_cover,data,condition);
+            // String result = dbFactory.select(Usr.table, "usr_id", condition);
+            System.out.println("boolee is"+ boo + pName + "is cvname --> " + data[0] ) ;
+            if(boo) {
+                return pName;
+            } else {
+                return "Failed";
+            }
+        } else if(photo == "profile") {
+            Object [] data = new Object[]{pName};
+            String condition = "usr_id = '" + id +"'" ;
+            Boolean boo =  dbFactory.update(Usr.table,user_profile,data,condition);
+            // String result = dbFactory.select(Usr.table, "usr_id", condition);
+            System.out.println("boolee is"+ boo + pName + "is pfname --> " + data[0] ) ;
+            if(boo) {
+                return pName;
+            } else {
+                return "Failed";
+            }
+        }
+        return "Failed";
+
+    }
+ /*   public String postTwoPhotos(String id, String [] ProfileCover) {
+        Object [] data = new Object[]{ProfileCover[0],ProfileCover[1]};
+        String condition = "usr_id = '" + id +"'" ;
+        Boolean boo =  dbFactory.update(Usr.table,user_profile_cover,data,condition);
+        // String result = dbFactory.select(Usr.table, "usr_id", condition);
+        System.out.println("boolee is"+ boo + ProfileCover[0] + "is pfname" + data[0] ) ;
+        if(boo) {
+            return ProfileCover[0] + " " + ProfileCover[1];
+        } else {
+            return "Failed";
+        }
+
+    }*/
+
 
     public boolean confgOTP_Act(String state, HttpSession session) {
         Object[] data = new Object[] {"eth_act"};
@@ -84,6 +150,16 @@ public class UsersDAO {
     {
         String condition = "email = '"+email+"'";
         return dbFactory.select(Usr.table,"usr_id",condition);
+    }
+    public String selectPf(String id)
+    {
+        String condition = "usr_id = '"+id+"'";
+        return dbFactory.select(Usr.table, "profile", condition);
+    }
+    public String selectCv(String id)
+    {
+        String condition = "usr_id = '"+id+"'";
+        return dbFactory.select(Usr.table, "cover", condition);
     }
     public String checkPassword(String email,String password)
     {

@@ -42,7 +42,25 @@
             -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
             transition: transform 0.5s ease-in;
         }
+        .third-farm-form.right {
+            -webkit-transform: translateX(200%);
+            -moz-transform: translateX(200%);
+            -ms-transform: translateX(200%);
+            -o-transform: translateX(200%);
+            transform: translateX(200%);
+            -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
+            transition: transform 0.5s ease-in;
+        }
         .first-farm-form.left {
+            -webkit-transform: translateX(-200%);
+            -moz-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            -o-transform: translateX(-200%);
+            transform: translateX(-200%);
+            -webkit-transition: -webkit-transform 0.5s ease-out; /* Safari */
+            transition: transform 0.5s ease-out;
+        }
+        .second-farm-form.left {
             -webkit-transform: translateX(-200%);
             -moz-transform: translateX(-200%);
             -ms-transform: translateX(-200%);
@@ -59,6 +77,11 @@
             -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
             transition: transform 0.5s ease-in;
         }
+        .third-farm-form {
+            -webkit-transition: -webkit-transform 0.5s ease-in; /* Safari */
+            transition: transform 0.5s ease-in;
+        }
+
     </style>
 
 </head>
@@ -74,8 +97,8 @@
 <!-- New Post Model -->
 <div class="modal fade" id="newPost" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content" style="background: transparent;">
-            <div class="modal-card card first-farm-form" style="width:100%;position:absolute;left:0;">
+        <div class="modal-content first-farm-form" style="background: transparent;position:absolute;left:0;">
+            <div class="modal-card card">
                 <div class="card-header">
                     <div class="row align-items-center">
                         <div class="col-auto">
@@ -127,13 +150,71 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-card card second-farm-form right farm-form-right" style="right:0;">
+        </div>
+
+        <div class="modal-content second-farm-form right" style="background: transparent;position:absolute;left:0;">
+            <div class="modal-card card">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+
+                        <!-- Close -->
+                            <button type="button" class="close btn-sm previous-farm-form">
+                                <span class="fe fe-arrow-left"></span>
+                            </button>
+
+                        </div>
+                        <div class="col" style="text-align:center;">
+
+                        <!-- Title -->
+                        <h4 class="card-header-title" id="exampleModalCenterTitle">
+                        Add a Farm
+                        </h4>
+
+                        </div>
+                        <div class="col-auto">
+
+                        <!-- Close -->
+                        <button type="button" class="close">
+                            <span id="third-farm-btn-right" class="fe fe-arrow-right"></span>
+                        </button>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+                <div class="card-header">
+                    <div class="mb-0" data-select2-id="10">
+                    Select <span class="badge badge-soft-primary" style="font-size:15px;margin-bottom:5px;">Categories</span><br>
+                        <select class="form-control select2-hidden-accessible" data-toggle="select" multiple="" data-select2-id="7" tabindex="-1" aria-hidden="true">
+                            <option data-select2-id="19">CSS</option>
+                            <option data-select2-id="20">HTML</option>
+                            <option data-select2-id="21">JavaScript</option>
+                            <option data-select2-id="22">Bootstrap</option>
+                            <option data-select2-id="1">Shwe</option>
+                            <option data-select2-id="2">Zaw</option>
+                            <option data-select2-id="3">Htet</option>
+                            <option data-select2-id="4">Pyae</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Single -->
+                    <form>
+                        <label class="sr-only">Description...</label>
+                        <textarea class="form-control" placeholder="Description..." rows="2"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-content third-farm-form right" style="background: transparent;position:absolute;left:0;">
+            <div class="modal-card card">
                 <div class="card-header">
                     <div class="row align-items-center">
                         <div class="col-auto">
 
                             <!-- Close -->
-                            <button type="button" class="close btn-sm previous-farm-form">
+                            <button type="button" class="close third-farm-btn-left">
                                 <span class="fe fe-arrow-left"></span>
                             </button>
 
@@ -149,36 +230,16 @@
                         <div class="col-auto">
 
                             <!-- Close -->
-                            <button type="button" class="close">
+                            <button type="button" class="close next-farm-form">
                                 <span class="fe fe-check"></span>
                             </button>
 
                         </div>
                     </div> <!-- / .row -->
                 </div>
-                <div class="card-header">
-                    <div class="mb-0" data-select2-id="10">
-                        Select <span class="badge badge-soft-primary" style="font-size:15px;margin-bottom:5px;">Categories</span><br>
-                        <select class="form-control select2-hidden-accessible" data-toggle="select" multiple="" data-select2-id="7" tabindex="-1" aria-hidden="true">
-                            <option data-select2-id="19">CSS</option>
-                            <option data-select2-id="20">HTML</option>
-                            <option data-select2-id="21">JavaScript</option>
-                            <option data-select2-id="22">Bootstrap</option>
-                            <option data-select2-id="1">Shwe</option>
-                            <option data-select2-id="2">Zaw</option>
-                            <option data-select2-id="3">Htet</option>
-                            <option data-select2-id="4">Pyae</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="card-body">
                     <!-- Farm Map -->
-                    <div id='map' style='width: 100%; height:300px;'></div>
-                    <!-- Single -->
-                    <form>
-                        <label class="sr-only">Description...</label>
-                        <textarea class="form-control" placeholder="Description..." rows="2"></textarea>
-                    </form>
+                    <div id='map' style='width: 100%; height: 300px;'></div>
                 </div>
             </div>
         </div>
@@ -2661,10 +2722,20 @@
             setTimeout(function(){$(".profile-info-row .farm-edit").slideDown(500)}, 500);
         });
 
+        $('#third-farm-btn-right').on('click', function() {
+            $('.third-farm-form').removeClass('right');
+            $('.second-farm-form').addClass('left');
+        });
+
+        $('.third-farm-btn-left').on('click', function() {
+            $('.third-farm-form').addClass('right');
+            $('.second-farm-form').removeClass('left');
+        });
+
         mapboxgl.accessToken = 'pk.eyJ1IjoiN2hlNHIxc2UiLCJhIjoiY2prcXpzdTV6MXpwMjN1czc2eG5uZjd6bSJ9.P4KTUArF5MU9eY-WrOCJdg';
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/basic-v9'
+            style: 'mapbox://styles/mapbox/streets-v10'
         });
     });
 

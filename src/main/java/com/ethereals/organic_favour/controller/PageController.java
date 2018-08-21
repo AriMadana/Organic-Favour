@@ -1,11 +1,13 @@
 package com.ethereals.organic_favour.controller;
 
+import com.ethereals.organic_favour.file.ProfileImage;
+import com.ethereals.organic_favour.ftp.FTPService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
-
+//fully update by pst
 @Controller
 public class PageController {
     @RequestMapping("/")
@@ -61,12 +63,41 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("logout");
         return modelAndView;
     }
+    @RequestMapping(value="/reset_psw")
+    public ModelAndView forgetPassword()
+    {
+        ModelAndView modelAndView = new ModelAndView("forget-psw");
+        return modelAndView;
+    }
 
-    @RequestMapping(value = "/acc_setting")
+    @RequestMapping(value = "/profile")
     public ModelAndView profile_setting()
     {
-        ModelAndView modelAndView = new ModelAndView("settings");
+        ModelAndView modelAndView = new ModelAndView("profile");
 
+        return modelAndView;
+    }
+    @RequestMapping(value = "/configure_otp_reset")
+    public ModelAndView confOtpReset() {
+        ModelAndView modelAndView = new ModelAndView("otp_configure_reset");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/dropzone")
+    public ModelAndView dropZone() {
+        ModelAndView modelAndView = new ModelAndView("dropzone");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/dashboard-2")
+    public ModelAndView dashboard2() {
+        ModelAndView modelAndView = new ModelAndView("dashboard-2");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/dashboard-3")
+    public ModelAndView dashboard3() {
+        ModelAndView modelAndView = new ModelAndView("dashboard-3");
         return modelAndView;
     }
 }

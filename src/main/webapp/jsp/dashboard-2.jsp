@@ -14,9 +14,34 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/theme.min.css">
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
     <title>Dashkit</title>
     <style>
+        .filter-ctrl {
+            position: absolute;
+            top: 70px;
+            left: 10px;
+            z-index: 1;
+            width: 180px;
+        }
+
+        .filter-ctrl input[type=text] {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            width: 100%;
+            border: 0;
+            background-color: #fff;
+            height: 40px;
+            margin: 0;
+            color: rgba(0,0,0,.5);
+            padding: 10px;
+            box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+            border-radius: 3px;
+        }
+        .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
         .second-post-form.right {
             -webkit-transform: translateX(200%);
             -moz-transform: translateX(200%);
@@ -1060,87 +1085,21 @@
 ================================================== -->
 <div class="main-content">
     <!-- HEADER -->
-    <div class="header bg-dark pb-5">
+    <div class="header bg-dark pb-5" style="min-height: 100vh;">
         <div class="container">
             <div class="header-body" style="border-bottom: 0; padding-bottom: 0;">
                 <div class="row">
-                    <div class="col-12 col-xl-4">
-
-                        <!-- Devices -->
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="row align-items-center">
-                                    <div class="col">
-
-                                        <!-- Title -->
-                                        <button type="button" class="btn btn-primary" data-target="#newSellPost" data-toggle="modal">
-                                            <span class="fe fe-package mr-2"></span>New Post
-                                        </button>
-
-                                    </div>
-                                    <div class="col-auto">
-
-                                        <!-- Tabs -->
-                                        <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-                                            <li class="nav-item" data-toggle="chart" data-target="#devicesChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[60,25,15]}]}}">
-                                                <a href="#" class="nav-link active" data-toggle="tab">
-                                                    All
-                                                </a>
-                                            </li>
-                                            <li class="nav-item" data-toggle="chart" data-target="#devicesChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[15,45,20]}]}}">
-                                                <a href="#" class="nav-link" data-toggle="tab">
-                                                    Direct
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                </div> <!-- / .row -->
-
-                            </div>
-                            <div class="card-body">
-
-                                <!-- Chart -->
-                                <div class="form-row">
-                                    <select class="form-control" data-toggle="select">
-                                        <option>What</option>
-                                        <option>The</option>
-                                        <option>Fuck</option>
-                                    </select>
-                                </div>
-                                <div class="form-row" style="margin-top:10px;">
-                                    <select class="form-control" data-toggle="select">
-                                        <option>What</option>
-                                        <option>The</option>
-                                        <option>Fuck</option>
-                                    </select>
-                                </div>
-                                <div class="form-row" style="margin-top:10px;">
-                                    <select class="form-control" data-toggle="select">
-                                        <option>What</option>
-                                        <option>The</option>
-                                        <option>Fuck</option>
-                                    </select>
-                                </div>
-
-                                <!-- Legend -->
-                                <div id="devicesChartLegend" class="chart-legend"><span class="chart-legend-item"><i class="chart-legend-indicator" style="background-color: #2C7BE5"></i>Desktop</span><span class="chart-legend-item"><i class="chart-legend-indicator" style="background-color: #A6C5F7"></i>Tablet</span><span class="chart-legend-item"><i class="chart-legend-indicator" style="background-color: #D2DDEC"></i>Mobile</span></div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-xl-8">
+                    <div class="col-12">
 
                         <!-- Orders -->
-                        <div class="card" style="background: transparent;border:0;">
+                        <div class="card" style="border:0;">
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
 
                                         <!-- Title -->
                                         <h4 class="card-header-title">
-                                            Orders
+                                            Available Items to Buy/Sell
                                         </h4>
 
                                     </div>
@@ -1149,7 +1108,9 @@
                                         <span class="text-muted">
                                             Show affiliate:
                                         </span>
-
+                                        <button type="button" class="btn btn-primary" data-target="#newSellPost" data-toggle="modal">
+                                            <span class="fe fe-package mr-2"></span>New Post
+                                        </button>
                                     </div>
                                     <div class="col-auto">
 
@@ -1164,21 +1125,21 @@
                                 </div> <!-- / .row -->
 
                             </div>
-                            <div class="card-body">
-
-                                <!-- Chart -->
-                                <div class="chart"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-                                    <canvas id="ordersChart" class="chart-canvas chartjs-render-monitor" width="1376" height="600" style="display: block; height: 300px; width: 688px;"></canvas>
-                                </div>
-
+                            <div id='map' style='width: 100%; height: 60vh;'></div>
+                            <div class='filter-ctrl'>
+                                <input id='filter-input' type='text' name='filter' placeholder='Filter By Item...' />
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-
+            <div class="card-footer" style="border-top:0;min-height: 20vh;margin-top:-20px;margin-bottom:20px;padding-top:0;padding-bottom:0;text-align:center;">
+                <span class="fe fe-chevron-down" style="color:#fffff0;font-size:80px;"></span>
+                <!-- Chart -->
+            </div>
         </div> <!-- / .container -->
+
     </div> <!-- / .header -->
 
     <!-- CARDS -->
@@ -1858,7 +1819,226 @@
 
 <!-- Theme JS -->
 <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
+<%--<script src="${pageContext.request.contextPath}/assets/js/mapbox-custom.js"></script>--%>
 <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiN2hlNHIxc2UiLCJhIjoiY2prcXpzdTV6MXpwMjN1czc2eG5uZjd6bSJ9.P4KTUArF5MU9eY-WrOCJdg';
+    var fruits = {
+        "type": "FeatureCollection",
+        "features": [{
+            "type": "Feature",
+            "properties": {
+                "description": "<strong>Mad Men Season Five Finale Watch Party</strong>",
+                "icon": "cat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.038659, 38.931567]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "description": "<strong>Mad Men Season Five Finale Watch Party</strong>",
+                "icon": "cat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.003168, 38.894651]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "icon": "bar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.090372, 38.881189]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "icon": "bicycle"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.052477, 38.943951]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "icon": "music"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.031706, 38.914581]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "icon": "music"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.020945, 38.878241]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "icon": "music"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.007481, 38.876516]
+            }
+        }]
+    };
+
+    var layerIDs = []; // Will contain a list used to filter against.
+    var filterInput = document.getElementById('filter-input');
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/basic-v9',
+        center: [-77.04, 38.907],
+        zoom: 11.15
+    });
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    map.on('load', function() {
+        // Add a GeoJSON source containing place coordinates and information.
+        map.addSource('places', {
+            "type": "geojson",
+            "data": fruits
+        });
+        map.loadImage('${pageContext.request.contextPath}/assets/img/fruit-location.png', function(error, image) {
+            if (error) throw error;
+            map.addImage('cat', image);
+        });
+
+        fruits.features.forEach(function(feature) {
+            var symbol = feature.properties['icon'];
+            var layerID = 'poi-' + symbol;
+
+            // Add a layer for this symbol type if it hasn't been added already.
+            if (!map.getLayer(layerID)) {
+                if(layerID == 'poi-cat') {
+                    map.addLayer({
+                        "id": layerID,
+                        "type": "symbol",
+                        "source": "places",
+                        "layout": {
+                            "icon-image": "cat",
+                            "icon-size": 0.08,
+                            "text-field": "fuck",
+                            "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+                            "text-size": 11,
+                            "text-transform": "uppercase",
+                            "text-letter-spacing": 0.05,
+                            "text-offset": [0, 1.5]
+                        },
+                        "paint": {
+                            "text-color": "#202",
+                            "text-halo-color": "#fff",
+                            "text-halo-width": 2
+                        },
+                        "filter": ["==", "icon", symbol]
+                    });
+                }
+                else {
+                    map.addLayer({
+                        "id": layerID,
+                        "type": "symbol",
+                        "source": "places",
+                        "layout": {
+                            "icon-image": symbol + "-15",
+                            "icon-allow-overlap": true,
+                            "icon-size": 1.5,
+                            "text-field": symbol,
+                            "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+                            "text-size": 11,
+                            "text-transform": "uppercase",
+                            "text-letter-spacing": 0.05,
+                            "text-offset": [0, 1.5]
+                        },
+                        "paint": {
+                            "text-color": "#202",
+                            "text-halo-color": "#fff",
+                            "text-halo-width": 2
+                        },
+                        "filter": ["==", "icon", symbol]
+                    });
+
+                }
+
+                layerIDs.push(layerID);
+            }
+        });
+
+        filterInput.addEventListener('keyup', function(e) {
+            // If the input value matches a layerID set
+            // it's visibility to 'visible' or else hide it.
+            var value = e.target.value.trim().toLowerCase();
+            layerIDs.forEach(function(layerID) {
+                map.setLayoutProperty(layerID, 'visibility',
+                    layerID.indexOf(value) > -1 ? 'visible' : 'none');
+            });
+        });
+
+        map.on('click', 'poi-cat', function (e) {
+            var coordinates = e.features[0].geometry.coordinates.slice();
+            var description = e.features[0].properties.description;
+
+            // Ensure that if the map is zoomed out such that multiple
+            // copies of the feature are visible, the popup appears
+            // over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(description)
+                .addTo(map);
+        });
+
+        map.on('click', 'poi-music', function (e) {
+            map.flyTo({center: e.features[0].geometry.coordinates});
+        });
+
+        // Change the cursor to a pointer when the it enters a feature in the 'symbols' layer.
+        map.on('mouseenter', 'poi-music', function () {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'poi-music', function () {
+            map.getCanvas().style.cursor = '';
+        });
+
+
+        map.on('click', 'poi-cat', function (e) {
+            map.flyTo({center: e.features[0].geometry.coordinates});
+        });
+
+        // Change the cursor to a pointer when the it enters a feature in the 'symbols' layer.
+        map.on('mouseenter', 'poi-cat', function () {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'poi-cat', function () {
+            map.getCanvas().style.cursor = '';
+        });
+    });
+
+
+
+
+
+
+
+
+
+
     $('.price-option-div').slideUp(500);
     $('.price-option-one').slideDown(500);
     $('.user-farm-card').on('click', function() {
@@ -1889,6 +2069,10 @@
         $(this).addClass('active');
         $('.price-option-div').slideUp(200);
         setTimeout(function(){$('.price-option-three').slideDown(200)}, 200);
+    });
+
+    $('#fuck').on('click', function() {
+        alert('Go Fuck Yourself');
     });
 </script>
 </body>

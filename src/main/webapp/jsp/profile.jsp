@@ -14,9 +14,13 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/theme.min.css">
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
     <title>Dashkit</title>
     <style>
+        .farm-card-view:hover {
+            cursor: pointer;
+        }
         .cust_dz .dz-message{
             top:0;
             left:0;
@@ -168,6 +172,8 @@
                     </div>
                 </div>
                 <div class="card-body">
+                    <!-- Farm Map -->
+                    <div id='map' style='width: 100%; height:300px;'></div>
                     <!-- Single -->
                     <form>
                         <label class="sr-only">Description...</label>
@@ -1335,8 +1341,8 @@
                             <div class="row listAlias"><div class="col-12 col-md-6 col-xl-4">
 
                                 <!-- Card -->
-                                <div class="card">
-                                    <a href="project-overview.html">
+                                <div class="card farm-card-view">
+                                    <a href="#">
                                         <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-1.jpg" alt="..." class="card-img-top">
                                     </a>
                                     <div class="card-body">
@@ -1345,76 +1351,13 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-2 name">
-                                                    <a href="project-overview.html">Homepage Redesign</a>
+                                                    <a href="#">Homepage Redesign</a>
                                                 </h4>
 
                                                 <!-- Subtitle -->
                                                 <p class="card-text small text-muted">
                                                     Updated 4hr ago
                                                 </p>
-
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Dropdown -->
-                                                <div class="dropdown">
-                                                    <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fe fe-more-vertical"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                        <a href="#!" class="dropdown-item">
-                                                            Action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Another action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Something else here
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div> <!-- / .row -->
-
-                                        <!-- Divider -->
-                                        <hr>
-
-                                        <div class="row align-items-center">
-                                            <div class="col">
-                                                <div class="row align-items-center no-gutters">
-                                                    <div class="col-auto">
-
-                                                        <div class="small mr-2">29%</div>
-
-                                                    </div>
-                                                    <div class="col">
-
-                                                        <!-- Progress -->
-                                                        <div class="progress progress-sm">
-                                                            <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-
-                                                    </div>
-                                                </div> <!-- / .row -->
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Avatar group -->
-                                                <div class="avatar-group">
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Ab Hadley">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Adolfo Hess">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Daniela Dewitt">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Miyah Myles">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                </div>
 
                                             </div>
                                         </div> <!-- / .row -->
@@ -1425,8 +1368,8 @@
                             </div><div class="col-12 col-md-6 col-xl-4">
 
                                 <!-- Card -->
-                                <div class="card">
-                                    <a href="project-overview.html">
+                                <div class="card farm-card-view">
+                                    <a href="#">
                                         <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="card-img-top">
                                     </a>
                                     <div class="card-body">
@@ -1435,7 +1378,7 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-2 name">
-                                                    <a href="project-overview.html">Travels &amp; Time</a>
+                                                    <a href="#">Travels &amp; Time</a>
                                                 </h4>
 
                                                 <!-- Subtitle -->
@@ -1444,71 +1387,7 @@
                                                 </p>
 
                                             </div>
-                                            <div class="col-auto">
-
-                                                <!-- Dropdown -->
-                                                <div class="dropdown">
-                                                    <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fe fe-more-vertical"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                        <a href="#!" class="dropdown-item">
-                                                            Action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Another action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Something else here
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                            </div>
                                         </div> <!-- / .row -->
-
-                                        <!-- Divider -->
-                                        <hr>
-
-                                        <div class="row align-items-center">
-                                            <div class="col">
-                                                <div class="row align-items-center no-gutters">
-                                                    <div class="col-auto">
-
-                                                        <div class="small mr-2">77%</div>
-
-                                                    </div>
-                                                    <div class="col">
-
-                                                        <!-- Progress -->
-                                                        <div class="progress progress-sm">
-                                                            <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-
-                                                    </div>
-                                                </div> <!-- / .row -->
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Avatar group -->
-                                                <div class="avatar-group">
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Ab Hadley">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Adolfo Hess">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Daniela Dewitt">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Miyah Myles">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                        </div> <!-- / .row -->
-
                                     </div> <!-- / .card-body -->
                                 </div>
 
@@ -1517,13 +1396,13 @@
                         <div class="tab-pane fade" id="tabPaneTwo" role="tabpanel">
                             <div class="row list"><div class="col-12">
 
-                                <div class="card">
+                                <div class="card farm-card-view">
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-auto">
 
                                                 <!-- Avatar -->
-                                                <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                                                <a href="#" class="avatar avatar-lg avatar-4by3">
                                                     <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
                                                 </a>
 
@@ -1532,70 +1411,13 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-1 name">
-                                                    <a href="project-overview.html">Homepage Redesign</a>
+                                                    <a href="#">Homepage Redesign</a>
                                                 </h4>
 
                                                 <!-- Text -->
                                                 <p class="card-text small text-muted mb-1">
                                                     <time datetime="2018-06-21">Updated 2hr ago</time>
                                                 </p>
-
-                                                <!-- Progress -->
-                                                <div class="row align-items-center no-gutters">
-                                                    <div class="col-auto">
-
-                                                        <div class="small mr-2">29%</div>
-
-                                                    </div>
-                                                    <div class="col">
-
-                                                        <!-- Progress -->
-                                                        <div class="progress progress-sm">
-                                                            <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-
-                                                    </div>
-                                                </div> <!-- / .row -->
-
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Avatar group -->
-                                                <div class="avatar-group d-none d-md-inline-flex">
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Ab Hadley">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Adolfo Hess">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Daniela Dewitt">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Miyah Myles">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Dropdown -->
-                                                <div class="dropdown">
-                                                    <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fe fe-more-vertical"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                        <a href="#!" class="dropdown-item">
-                                                            Action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Another action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Something else here
-                                                        </a>
-                                                    </div>
-                                                </div>
 
                                             </div>
                                         </div> <!-- / .row -->
@@ -1604,13 +1426,13 @@
 
                             </div><div class="col-12">
 
-                                <div class="card">
+                                <div class="card farm-card-view">
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-auto">
 
                                                 <!-- Avatar -->
-                                                <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                                                <a href="#" class="avatar avatar-lg avatar-4by3">
                                                     <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
                                                 </a>
 
@@ -1619,7 +1441,7 @@
 
                                                 <!-- Title -->
                                                 <h4 class="card-title mb-1 name">
-                                                    <a href="project-overview.html">Travels &amp; Time</a>
+                                                    <a href="#">Travels &amp; Time</a>
                                                 </h4>
 
                                                 <!-- Text -->
@@ -1627,62 +1449,6 @@
                                                     <time datetime="2018-06-21">Updated 5hr ago</time>
                                                 </p>
 
-                                                <!-- Progress -->
-                                                <div class="row align-items-center no-gutters">
-                                                    <div class="col-auto">
-
-                                                        <div class="small mr-2">77%</div>
-
-                                                    </div>
-                                                    <div class="col">
-
-                                                        <!-- Progress -->
-                                                        <div class="progress progress-sm">
-                                                            <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-
-                                                    </div>
-                                                </div> <!-- / .row -->
-
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Avatar group -->
-                                                <div class="avatar-group d-none d-md-inline-flex">
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Ab Hadley">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Adolfo Hess">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Daniela Dewitt">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                    <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Miyah Myles">
-                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle border border-white" alt="...">
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-auto">
-
-                                                <!-- Dropdown -->
-                                                <div class="dropdown">
-                                                    <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fe fe-more-vertical"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                        <a href="#!" class="dropdown-item">
-                                                            Action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Another action
-                                                        </a>
-                                                        <a href="#!" class="dropdown-item">
-                                                            Something else here
-                                                        </a>
-                                                    </div>
-                                                </div>
 
                                             </div>
                                         </div> <!-- / .row -->
@@ -2519,6 +2285,38 @@
 
                 </form>
             </div>
+            <!-- Freaking Farm Edit -->
+            <div class="farm-edit nav-link-data col-12 col-lg-10 col-xl-8">
+                <div class="container-fluid">
+
+                    <!-- Body -->
+                    <div class="header-body">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-lg avatar-4by3">
+                                    <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
+                                </div>
+
+                            </div>
+                            <div class="col ml--3 ml-md--2">
+
+                                <!-- Pretitle -->
+                                <h6 class="header-pretitle">
+                                    Projects
+                                </h6>
+
+                                <!-- Title -->
+                                <h1 class="header-title">
+                                    Homepage Redesign
+                                </h1>
+
+                            </div>
+                        </div> <!-- / .row -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div> <!-- / .container-fluid -->
 
@@ -2855,6 +2653,18 @@
         $(".previous-farm-form").on("click", function() {
             $(".first-farm-form").removeClass("left");
             $(".second-farm-form").addClass("right");
+        });
+        $('.farm-card-view').on('click', function() {
+            $('.nav-link-data').slideUp(500);
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+            setTimeout(function(){$(".profile-info-row .farm-edit").slideDown(500)}, 500);
+        });
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoiN2hlNHIxc2UiLCJhIjoiY2prcXpzdTV6MXpwMjN1czc2eG5uZjd6bSJ9.P4KTUArF5MU9eY-WrOCJdg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/basic-v9'
         });
     });
 

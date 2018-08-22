@@ -1196,55 +1196,111 @@
                             What do you y'all think? Would love some feedback from <a href="#!" class="badge badge-soft-primary">@Ab</a> or <a href="#!" class="badge badge-soft-primary">@Adolfo</a>?
                         </p>
 
-                        <!-- Image -->
-                        <p class="text-center mb-3">
-                            <img src="${pageContext.request.contextPath}/assets/img/posts/post-1.jpg" alt="..." class="img-fluid rounded">
-                        </p>
+                        <!-- Price List Card -->
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
 
-                        <!-- Buttons -->
-                        <div class="mb-3">
-                            <div class="row">
-                                <div class="col">
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
 
-                                    <a href="#!" class="btn btn-sm btn-white">
-                                        😬 1
-                                    </a>
-                                    <a href="#!" class="btn btn-sm btn-white">
-                                        👍 2
-                                    </a>
-                                    <a href="#!" class="btn btn-sm btn-white">
-                                        Add Reaction
-                                    </a>
+                                        <!-- Title -->
+                                        <h6 class="text-uppercase text-center text-muted my-4">
+                                            Basic plan
+                                        </h6>
 
-                                </div>
-                                <div class="col-auto mr--3">
+                                        <!-- Price -->
+                                        <div class="row no-gutters align-items-center justify-content-center">
+                                            <div class="col-auto">
+                                                <div class="h2 mb-0">$</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="display-2 mb-0">19</div>
+                                            </div>
+                                        </div> <!-- / .row -->
 
-                                    <div class="avatar-group d-none d-sm-flex">
-                                        <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Ab Hadley">
-                                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+                                        <!-- Period -->
+                                        <div class="h6 text-uppercase text-center text-muted mb-5">
+                                            / month
+                                        </div>
+                                        <!-- Button -->
+                                        <a href="#!" class="btn btn-block btn-light">
+                                            Start with Basic
                                         </a>
-                                        <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Adolfo Hess">
-                                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                        </a>
-                                        <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Daniela Dewitt">
-                                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                        </a>
-                                        <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="" data-original-title="Miyah Myles">
-                                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle border border-white">
-                                        </a>
+
                                     </div>
-
                                 </div>
-                                <div class="col-auto">
 
-                                    <a href="#!" class="btn btn-sm btn-white">
-                                        Share
-                                    </a>
+                            </div>
+                            <div class="col-12 col-lg-4">
 
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h6 class="text-uppercase text-center text-muted my-4">
+                                            Standard plan
+                                        </h6>
+
+                                        <!-- Price -->
+                                        <div class="row no-gutters align-items-center justify-content-center">
+                                            <div class="col-auto">
+                                                <div class="h2 mb-0">$</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="display-2 mb-0">29</div>
+                                            </div>
+                                        </div> <!-- / .row -->
+
+                                        <!-- Period -->
+                                        <div class="h6 text-uppercase text-center text-muted mb-5">
+                                            / month
+                                        </div>
+                                        <!-- Button -->
+                                        <a href="#!" class="btn btn-block btn-primary">
+                                            Start with Standard
+                                        </a>
+
+                                    </div>
                                 </div>
-                            </div> <!-- / .row -->
+
+                            </div>
+                            <div class="col-12 col-lg-4">
+
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h6 class="text-uppercase text-center text-muted my-4">
+                                            Enterprise plan
+                                        </h6>
+
+                                        <!-- Price -->
+                                        <div class="row no-gutters align-items-center justify-content-center">
+                                            <div class="col-auto">
+                                                <div class="h2 mb-0">$</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="display-2 mb-0">99</div>
+                                            </div>
+                                        </div> <!-- / .row -->
+
+                                        <!-- Period -->
+                                        <div class="h6 text-uppercase text-center text-muted mb-5">
+                                            / month
+                                        </div>
+                                        <!-- Button -->
+                                        <a href="#!" class="btn btn-block btn-light">
+                                            Start with Enterprise
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-
                         <!-- Divider -->
                         <hr>
 
@@ -2410,6 +2466,9 @@
 <script>
     $(document).ready(function() {
         var farm_lat, farm_lng;
+
+
+
         $.ajax({
 
             url: "prof_get", //here you can use servlet,jsp, etc
@@ -2758,6 +2817,28 @@
             coordinates.innerHTML = 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
         }
 
+        function parseReverseGeo(geoData) {
+            // debugger;
+            var region, countryName, placeName, returnStr;
+            if(geoData.context){
+                $.each(geoData.context, function(i, v){
+                    if(v.id.indexOf('region') >= 0) {
+                        region = v.text;
+                    }
+                    if(v.id.indexOf('country') >= 0) {
+                        countryName = v.text;
+                    }
+                });
+            }
+            if(region && countryName) {
+                returnStr = region + ", " + countryName;
+            } else {
+                returnStr = geoData.place_name;
+            }
+            alert(returnStr);
+            return returnStr;
+        }
+
         marker.on('dragend', onDragEnd);
         // Add geolocate control to the map.
         map.addControl(new mapboxgl.GeolocateControl({
@@ -2770,6 +2851,8 @@
         $('.post-farm-form').on('click', function() {
             var lngLat = marker.getLngLat();
             alert(lngLat.lng + ' ' + lngLat.lat);
+            var loc = '11181';
+            parseReverseGeo(loc);
         });
     });
 

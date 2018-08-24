@@ -18,6 +18,9 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
     <title>Dashkit</title>
     <style>
+        .mapboxgl-canvas {
+            width: 100%;
+        }
         /*.coordinates {*/
             /*background: rgba(0,0,0,0.5);*/
             /*color: #fff;*/
@@ -99,6 +102,16 @@
 
 </head>
 <body>
+<!-- Messages -->
+<div class="modal fade" id="messages-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-vertical" role="document">
+        <div class="modal-content">
+            <iframe src="conversations" style="border:none;" height="100%" width="100%"></iframe>
+        </div>
+    </div>
+</div>
+
+
 <!-- New Post Model -->
 <div class="modal fade" id="newPost" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -245,7 +258,7 @@
                 <div class="card-body">
                     <!-- Farm Map -->
                     <div style="width: 100%;">
-                        <div style="width:100% !important; height:280px;" id="map"></div>
+                        <div style="width:100%; height:280px;" id="map"></div>
                         <pre id='coordinates' class='coordinates'></pre>
                     </div>
                 </div>
@@ -767,10 +780,10 @@
 
                 <!-- Menu -->
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a href="profile-posts.html" class="dropdown-item">Profile</a>
-                    <a href="settings.html" class="dropdown-item">Settings</a>
+                    <a href="#" class="dropdown-item">Profile</a>
+                    <a id="messages-modal-btn" href="#" class="dropdown-item">Messages</a>
                     <hr class="dropdown-divider">
-                    <a href="sign-in.html" class="dropdown-item">Logout</a>
+                    <a href="#" class="dropdown-item">Logout</a>
                 </div>
 
             </div>
@@ -1102,11 +1115,6 @@
 
                         <!-- Nav -->
                         <ul class="nav nav-tabs nav-overflow header-tabs">
-                            <li class="nav-item">
-                                <a id="posts" class="nav-link active">
-                                    Posts
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 <a id="farms" class="nav-link">
                                     Farms
@@ -1455,7 +1463,7 @@
                             </div> <!-- / .nav -->
 
                         </div>
-                        <button type="button" class="btn btn-success btn-primary btn-lg" style="margin-right: 13px" data-target="#newPost" data-toggle="modal">
+                        <button type="button" class="btn btn-success btn-primary btn-lg" style="margin-right: 13px" id="new-post-btn" data-toggle="modal">
                             New
                         </button>
                     </div> <!-- / .row -->
@@ -1463,124 +1471,76 @@
                     <!-- Tab content -->
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="tabPaneOne" role="tabpanel">
-                            <div class="row listAlias"><div class="col-12 col-md-6 col-xl-4">
+                            <div id="farm-card-view-container" class="row listAlias">
+                                <div class="col-12 col-md-6 col-xl-4">
 
-                                <!-- Card -->
-                                <div class="card farm-card-view">
-                                    <a href="#">
-                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-1.jpg" alt="..." class="card-img-top">
-                                    </a>
-                                    <div class="card-body">
-                                        <div class="row align-items-center">
-                                            <div class="col">
+                                    <!-- Card -->
+                                    <div class="card farm-card-view" for="id">
+                                        <a href="#">
+                                            <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="card-img-top">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="row align-items-center">
+                                                <div class="col">
 
-                                                <!-- Title -->
-                                                <h4 class="card-title mb-2 name">
-                                                    <a class="farm-info" href="#">Homepage Redesign</a>
-                                                </h4>
+                                                    <!-- Title -->
+                                                    <h4 class="card-title mb-2 name">
+                                                        <a class="farm-info" href="#">Travels &amp; Time</a>
+                                                    </h4>
 
-                                                <!-- Subtitle -->
-                                                <p class="card-text small text-muted">
-                                                    Updated 4hr ago
-                                                </p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button type="button" class="close farm-card-setting">
+                                                        <span class="fe fe-settings"></span>
+                                                    </button>
+                                                </div>
+                                            </div> <!-- / .row -->
+                                        </div> <!-- / .card-body -->
+                                    </div>
 
-                                            </div>
-                                        </div> <!-- / .row -->
-
-                                    </div> <!-- / .card-body -->
                                 </div>
-
-                            </div><div class="col-12 col-md-6 col-xl-4">
-
-                                <!-- Card -->
-                                <div class="card farm-card-view">
-                                    <a href="#">
-                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="card-img-top">
-                                    </a>
-                                    <div class="card-body">
-                                        <div class="row align-items-center">
-                                            <div class="col">
-
-                                                <!-- Title -->
-                                                <h4 class="card-title mb-2 name">
-                                                    <a class="farm-info" href="#">Travels &amp; Time</a>
-                                                </h4>
-
-                                                <!-- Subtitle -->
-                                                <p class="card-text small text-muted">
-                                                    Updated 4hr ago
-                                                </p>
-
-                                            </div>
-                                        </div> <!-- / .row -->
-                                    </div> <!-- / .card-body -->
-                                </div>
-
-                            </div></div> <!-- / .row -->
+                            </div> <!-- / .row -->
                         </div>
                         <div class="tab-pane fade" id="tabPaneTwo" role="tabpanel">
-                            <div class="row list"><div class="col-12">
+                            <div class="row list">
+                                <div class="col-12">
 
-                                <div class="card farm-card-view">
-                                    <div class="card-body">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
+                                    <div class="card farm-card-view">
+                                        <div class="card-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
 
-                                                <!-- Avatar -->
-                                                <a href="#" class="avatar avatar-lg avatar-4by3">
-                                                    <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
-                                                </a>
+                                                    <!-- Avatar -->
+                                                    <a href="#" class="avatar avatar-lg avatar-4by3">
+                                                        <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
+                                                    </a>
 
-                                            </div>
-                                            <div class="col ml--2">
+                                                </div>
+                                                <div class="col ml--2">
 
-                                                <!-- Title -->
-                                                <h4 class="card-title mb-1 name">
-                                                    <a class="farm-info" href="#">Homepage Redesign</a>
-                                                </h4>
+                                                    <!-- Title -->
+                                                    <h4 class="card-title mb-1 name">
+                                                        <a class="farm-info" href="#">Travels &amp; Time</a>
+                                                    </h4>
 
-                                                <!-- Text -->
-                                                <p class="card-text small text-muted mb-1">
-                                                    <time datetime="2018-06-21">Updated 2hr ago</time>
-                                                </p>
+                                                    <!-- Text -->
+                                                    <p class="card-text small text-muted mb-1">
+                                                        <time datetime="2018-06-21">Updated 5hr ago</time>
+                                                    </p>
 
-                                            </div>
-                                        </div> <!-- / .row -->
-                                    </div> <!-- / .card-body -->
+
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button type="button" class="close farm-card-setting">
+                                                        <span class="fe fe-settings"></span>
+                                                    </button>
+                                                </div>
+                                            </div> <!-- / .row -->
+                                        </div> <!-- / .card-body -->
+                                    </div>
+
                                 </div>
-
-                            </div><div class="col-12">
-
-                                <div class="card farm-card-view">
-                                    <div class="card-body">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-
-                                                <!-- Avatar -->
-                                                <a href="#" class="avatar avatar-lg avatar-4by3">
-                                                    <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
-                                                </a>
-
-                                            </div>
-                                            <div class="col ml--2">
-
-                                                <!-- Title -->
-                                                <h4 class="card-title mb-1 name">
-                                                    <a class="farm-info" href="#">Travels &amp; Time</a>
-                                                </h4>
-
-                                                <!-- Text -->
-                                                <p class="card-text small text-muted mb-1">
-                                                    <time datetime="2018-06-21">Updated 5hr ago</time>
-                                                </p>
-
-
-                                            </div>
-                                        </div> <!-- / .row -->
-                                    </div> <!-- / .card-body -->
-                                </div>
-
-                            </div></div> <!-- / .row -->
+                            </div> <!-- / .row -->
                         </div>
                     </div> <!-- / .tab-content -->
 
@@ -2751,12 +2711,6 @@
 
         $(".nav-link-data").slideUp(0);
         $(".profile-info-row .posts").slideDown(500);
-        $("#posts").on("click", function() {
-            $('.nav-link-data').slideUp(500);
-            $('.nav-link').removeClass("active");
-            $(this).addClass("active");
-            setTimeout(function(){$(".profile-info-row .posts").slideDown(500)}, 500);
-        });
         $("#farms").on("click", function() {
             $('.nav-link-data').slideUp(500);
             $('.nav-link').removeClass("active");
@@ -2784,8 +2738,8 @@
             $(".second-farm-form").addClass("right");
         });
         $('.farm-card-view').on('click', function() {
-            $('#newPost').modal('show');
-            $('#farm-edit').find('.edit-title').html($(this).find('.farm-info').html());
+            $('.nav-link-data').slideUp(500);
+            setTimeout(function(){$(".profile-info-row .posts").slideDown(500)}, 500);
         });
 
         $('#third-farm-btn-right').on('click', function() {
@@ -2796,6 +2750,11 @@
         $('.third-farm-btn-left').on('click', function() {
             $('.third-farm-form').addClass('right');
             $('.second-farm-form').removeClass('left');
+        });
+
+        $('.farm-card-setting').on('click', function() {
+            $('#newPost').modal('show');
+            $('#farm-edit').find('.edit-title').html($(this).find('.farm-info').html());
         });
 
         mapboxgl.accessToken = 'pk.eyJ1IjoiN2hlNHIxc2UiLCJhIjoiY2prcXpzdTV6MXpwMjN1czc2eG5uZjd6bSJ9.P4KTUArF5MU9eY-WrOCJdg';
@@ -2839,6 +2798,61 @@
             return returnStr;
         }
 
+        function reverseGeo(lng, lat) {
+            coordinates = lng+"%2C%20"+lat;
+            $.ajax({
+                type: "GET",
+                contentType: "application/json",
+                url: "https://api.mapbox.com/geocoding/v5/mapbox.places/" + coordinates + ".json?access_token=pk.eyJ1IjoiN2hlNHIxc2UiLCJhIjoiY2prcXpzdTV6MXpwMjN1czc2eG5uZjd6bSJ9.P4KTUArF5MU9eY-WrOCJdg", //here you can use servlet,jsp, etc
+                dataType: 'json',
+                timeout: 600000,
+                success: function(msg) {
+                    region = msg.features[0].place_name;
+                    alert(region);
+                    //data = xhr.features[0].place_name;
+                    //alert(data + " <-- Hay");
+                    // alert(msg.type);
+                    // alert(typeof(msg.features));
+                    // for (i in msg.features) {
+                    //     alert(msg.features[i].id + " <-- HERE");
+                    //     // x += "<h1>" + myObj.cars[i].name + "</h1>";
+                    //     // for (j in myObj.cars[i].models) {
+                    //     //     x += myObj.cars[i].models[j];
+                    //     // }
+                    // }
+                    // alert(thrownError.place_name + " <-- Here");
+
+                    //parseReverseGeo(msg.features[0]);
+
+
+                    // var region, countryName, placeName, returnStr;
+                    // if(msg.context){
+                    //     $.each(msg.context, function(i, v){
+                    //         if(v.id.indexOf('region') >= 0) {
+                    //             region = v.text;
+                    //         }
+                    //         if(v.id.indexOf('country') >= 0) {
+                    //             countryName = v.text;
+                    //         }
+                    //     });
+                    // }
+                    // if(region && countryName) {
+                    //     returnStr = region + ", " + countryName;
+                    // } else {
+                    //     returnStr = msg.place_name;
+                    // }
+                    // alert(returnStr);
+                    // alert(msg["place_name"]);
+                    // alert(msg.features.indexOf('place_name'));
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.responseText + " error");
+                    alert(thrownError + " Error");
+                }
+            }).done(function() {
+            });
+        }
+
         marker.on('dragend', onDragEnd);
         // Add geolocate control to the map.
         map.addControl(new mapboxgl.GeolocateControl({
@@ -2852,7 +2866,16 @@
             var lngLat = marker.getLngLat();
             alert(lngLat.lng + ' ' + lngLat.lat);
             var loc = '11181';
-            parseReverseGeo(loc);
+            reverseGeo(lngLat.lng, lngLat.lat);
+        });
+
+        $('#messages-modal-btn').on('click', function() {
+            $('#messages-modal').modal('show');
+        });
+
+        $('#new-post-btn').on('click', function() {
+            $('#newPost').modal('show');
+            // $('.mapboxgl-canvas').attr('style', 'position: relative; width: inherit; height: inherit;');
         });
     });
 
